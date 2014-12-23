@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.tooltipster.min.js"></script>
+
+<script>
+
+$(document).ready(function() {
+    $('.tooltip').tooltipster();
+});
+    </script>
+
+<style>
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Alegreya Sans', sans-serif;
+	overflow-x: hidden;
+}
+
+.floatright {
+	float: right;
+}
+
+</style>
+</head>
+<body>
+
+<img src="../../mediaTryOut/mica.jpg" class="tooltip" title="This is my image's tooltip message!" />
+
+
+
+<script>
+    $(document).ready(function() {
+        $('#my-tooltip').tooltipster({
+            content: $('<span><img src="../../mediaTryOut/mica.jpg" class="floatright" /> <strong>This text is in bold case !</strong></span>'),
+            position: $('bottom-right')
+        });
+    });
+</script>
+
+    
+<div id="my-tooltip"> 
+    <h1>This div has a tooltip with HTML when you hover over it!</h1>
+</div>
+
+
+
+
+
+
+</body>
+</html>
