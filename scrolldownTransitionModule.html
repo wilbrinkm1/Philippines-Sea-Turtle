@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width">
+
+<link href='http://fonts.googleapis.com/css?family=Cabin:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="resources/Buttons-master/css/buttons.css">
+<link rel="stylesheet" type="text/css" href="resources/gmaps-master/examples/examples.css" />
+
+<link rel="stylesheet" href="css/main.css">
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="resources/ScrollMagic/js/_dependent/jquery.min.js"></script>
+<script type="text/javascript" src="resources/ScrollMagic/js/_dependent/greensock/TweenMax.min.js"></script>
+<script type="text/javascript" src="resources/ScrollMagic/js/_dependent/greensock/TweenLite.min.js"></script>
+<script type="text/javascript" src="resources/ScrollMagic/js/_dependent/greensock/TimelineMax.min.js"></script>
+<script type="text/javascript" src="resources/ScrollMagic/js/jquery.scrollmagic.min.js"></script>
+<script type="text/javascript" src="resources/GreenSock/src/minified/jquery.gsap.min.js"></script>
+<script type="text/javascript" src="resources/GreenSock/src/minified/TweenMax.min.js"></script>
+<script type="text/javascript" src="resources/GreenSock/src/minified/TweenLite.min.js"></script>
+<script type="text/javascript" src="resources/GreenSock/src/minified/TimelineMax.min.js"></script>
+<script type="text/javascript" src="resources/GreenSock/src/minified/plugins/ScrambleTextPlugin.min.js"></script>
+<script type="text/javascript" src="resources/GreenSock/src/minified/plugins/TextPlugin.min.js"></script>
+<script type="text/javascript" src="resources/GreenSock/src/minified/plugins/CSSPlugin.min.js"></script>
+<script type="text/javascript" src="resources/GreenSock/src/minified/plugins/AttrPlugin.min.js"></script>
+<script type="text/javascript" src="resources/Buttons-master/js/buttons.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+
+<script type="text/javascript" src="resources/gmaps-master/gmaps.js"></script>
+
+<script type="text/javascript" src="js/main.js"></script>
+
+<script>
+
+var widthcheck = $( window ).width();
+	console.log(widthcheck);
+
+var controller;
+$(document).ready(function($) {
+	// init controller
+	controller = new ScrollMagic();
+});
+
+$(document).ready(function($) {
+	if (widthcheck > 1024) {
+	// build tween
+	var tween = TweenLite.to(firstTransition, 2, {width: "100%"});
+
+	// build scene
+	var scene = new ScrollScene({triggerElement: "#transition1"})
+		scene.setTween(tween)
+		scene.addTo(controller);
+	} else {
+		console.log("under 1024");
+	}
+});	 
+
+
+
+</script>
+
+
+<style>
+
+.trigger-class {
+	position: absolute;
+	width: 60px;
+	height: 20px;
+	font-size: 6px;
+	z-index: 3;
+	background-color: orange;	
+}
+
+#sectioncontainer {
+	width: 100%;
+	height: 5000px;
+	margin-top: 9.5%;
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.37, #C41919),
+	color-stop(1, #366DEB)
+);
+background-image: -o-linear-gradient(top, #003366 20%, #FFFFFF 74%, #003366 100%);
+background-image: -moz-linear-gradient(top, #003366 20%, #FFFFFF 74%, #003366 100%);
+background-image: -webkit-linear-gradient(top, #003366 20%, #FFFFFF 74%, #003366 100%);
+background-image: -ms-linear-gradient(top, #003366 20%, #FFFFFF 74%, #003366 100%);
+background-image: linear-gradient(to top, #003366 20%, #FFFFFF 74%, #003366 100%);
+}
+
+#transition1 {
+	margin-top: 1900px;
+}
+
+#firstTransition {
+	margin-top: 2000px;
+	position: absolute;
+	width: 0%;
+	height: 300px;
+	background-color: green;
+}
+
+
+</style>
+
+
+</head>
+<body>
+
+<div class="nav-container">
+	<div class="navlogo-container">
+		<a href="#"><img src="media/landing/WTF_flat_2psd.png" id="navlogo"/></a>
+    </div>
+    <div class="nav-middle-container">
+    	<p id="navtitle"></p>
+		    <a href="#landingdiv" class="nav-link">HOME</a>
+		    <a href="#" class="nav-link">FLOOD RESOURCE CENTER</a>
+		    <a href="#slideHold" class="nav-link">INDUSTRIES SERVED</a>
+		    <a href="#aboutHold" class="nav-link">ABOUT</a>
+		   	<a href="#vidcontainer" class="nav-link">MISSION</a>
+		   	<a href="#map" class="nav-link">CONTACT</a>
+    </div>
+    <div class="nav-right-container">
+    	<a href="#" class="nav-linkright">TIDELAND REPORT</a>
+    	<a href="media/landing/Flood_Determination_Sample_2014.pdf" class="nav-linkright">FLOOD DETERMINATION</a>
+    	<a href="media/landing/PEEK_REALTOR_SAMPLE_PEEK.pdf" class="nav-linkright">PROPERTY PEEK REPORT</a>
+    </div>
+</div>
+
+
+<div id="sectioncontainer">
+	<div id="transition1" class="trigger-class">Transition 1 In</div>
+	<div id="transition2" class="trigger-class">Transition 2 In</div>
+	<div id="transition3" class="trigger-class">Transition 3 In</div>
+	<div id="firstTransition"></div>
+</div>
+
+
+
+
+</body>
+</html>
