@@ -212,7 +212,10 @@ $(document).ready(function($) {
 	var tween = new TimelineMax()
 	.add (
 		TweenLite.to(navcontainer, 1, {scale: 0.75, top: "-4.5%"})
-	)
+	)/*
+	.add (
+		TweenLine.to()
+	) */
 	var scene = new ScrollScene({triggerElement: "#shrinkNav"})
 		.setTween(tween)
 		.addTo(controller);	
@@ -221,20 +224,53 @@ $(document).ready(function($) {
 	}
 });
 
+
+																					//	Shrinks wrapper at the same time as navbar 
+
+
 $(document).ready(function($) {
 	if (widthcheck > 1024) {
 	// build tween
 	var tween = new TimelineMax()
 	.add (
-		TweenLite.to(navwrapper, 1, {height: "100px"})
+		TweenLite.to(navwrapper, 1, {height: "120px"})
 	)
 	var scene = new ScrollScene({triggerElement: "#shrinkNav"})
 		.setTween(tween)
 		.addTo(controller);	
+		console.log("shrinkNav and Login tab fired")
 	} else {
 		console.log("under 1024");
 	}
 });
+
+
+
+
+																					//	Login tab appears underneath scaled-down navbar
+
+$(document).ready(function($) {
+	if (widthcheck > 1024) {
+	// build tween
+	var tween = new TimelineMax()
+	.add (
+		TweenLite.from(logintab, 1, {top: "90px"})
+	)
+	var scene = new ScrollScene({triggerElement: "#shrinkNav"})
+		.setTween(tween)
+		.addTo(controller);	
+		console.log("shrinkNav and Login tab fired")
+	} else {
+		console.log("under 1024");
+	}
+});
+
+
+
+																					//	Onclick Login Tab
+
+
+
 
 
 																					//	PARTNERS 
@@ -327,14 +363,13 @@ $(document).ready(function($) {
 	}
 });
 
-
-// Flood Estimator link
+//	Flood Resource landing section
 $(document).ready(function(){
-	$("#calculator").click(function(){
+	$("#floodresourceTitle").click(function(){
 		var tl = new TimelineMax()
 		tl.to(".FR", 0.5, {opacity: 0, display: "none"})
-		  .to("#calcWrapper", 1, {opacity: 1, display: "block"});
-  });
+		  .to("#landingcontainerFR", 1, {opacity: 1, display: "block"});
+  	});
 });
 
 //	Flood Resource video link
@@ -346,6 +381,7 @@ $(document).ready(function(){
   	});
 });
 
+//	Flood Links link
 $(document).ready(function(){
 	$("#FRlinks").click(function(){
 		var tl = new TimelineMax()
@@ -354,7 +390,14 @@ $(document).ready(function(){
   	});
 });
 
-
+// Flood Estimator link
+$(document).ready(function(){
+	$("#calculator").click(function(){
+		var tl = new TimelineMax()
+		tl.to(".FR", 0.5, {opacity: 0, display: "none"})
+		  .to("#calcWrapper", 1, {opacity: 1, display: "block"});
+  });
+});
 
 
 
@@ -441,6 +484,10 @@ $(document).ready(function($) {
 	}
 });
 
+
+
+
+
 //	Hover/mouseleave landingImgFD to display/fade landingtextboxFD
 
 $(document).ready(function(){
@@ -461,6 +508,17 @@ $(document).ready(function(){
 	});
 });
 
+
+//	Flood Determination landing section
+$(document).ready(function(){
+	$("#floodDeterminationTitle").click(function(){
+		var tl = new TimelineMax()
+		tl.fromTo(".FD", 0.5, {opacity: 1, display: "inline-block"}, {opacity: 0, display: "none"})
+		  .fromTo("#landingcontainerFD", 1, {opacity: 0, display: "none"}, {opacity: 1, display: "inline-block"});
+  	});
+});
+
+
 //	Flood Determination Flood Links
 $(document).ready(function(){
 	$("#SFHA").click(function(){
@@ -470,12 +528,6 @@ $(document).ready(function(){
 		  console.log("SFHA works");
   	});
 });
-
-
-
-
-
-
 
 
 $(document).ready(function(){
@@ -626,13 +678,9 @@ $(document).ready(function(){
 
 
 
+
 /*======================================================================================================================*/
 																								//	CONTACT SECTION
-
-
-
-
-
 
 
 
@@ -985,6 +1033,8 @@ $(document).ready(function(){
   	});
 });
 
+
+//	Previous Industry button
 $(document).ready(function(){
 	$("#prevIndustry").click(function(){
 		countIndustry--;
@@ -1078,8 +1128,11 @@ var map;
       map = new GMaps({
         el: '#map',
         lat: 40.5651428,
-        zoom: 15,
-        lng: -74.59591769999997
+        zoom: 14,
+        zoomControl: false,
+        lng: -74.59591769999997,
+        scrollwheel: false,
+		scaleControl: false
       });
       map.addMarker({
         lat: 40.5651428,
@@ -1114,9 +1167,9 @@ var tl = new TimelineLite();
 	});
 	$(document).on("mouseleave", "#floodcenter", function(){
 		$("#flaptitle").text(general[0].num0);
-		tl.to("#flaptext", 0.2, {opacity:0})
-		.to("#flaptitle", 0.2, {opacity:0})
-		.to("#njpfFlap", 0.5, {width:"0%"});
+		tl.to("#flaptext", 0.01, {opacity:0})
+		.to("#flaptitle", 0.01, {opacity:0})
+		.to("#njpfFlap", 0.01, {width:"0%"});
 	});
 	$(document).on("mouseenter","#njflood",function(){
 		$("#flaptitle").text(general[0].num1);
@@ -1127,9 +1180,9 @@ var tl = new TimelineLite();
 	});
 	$(document).on("mouseleave", "#njflood", function(){
 		$("#flaptitle").text(general[0].num1);
-		tl.to("#flaptext", 0.2, {opacity:0})
-		.to("#flaptitle", 0.2, {opacity:0})
-		.to("#njpfFlap", 0.5, {width:"0%"});
+		tl.to("#flaptext", 0.01, {opacity:0})
+		.to("#flaptitle", 0.01, {opacity:0})
+		.to("#njpfFlap", 0.01, {width:"0%"});
 	});
 
 	$(document).on("mouseenter","#njpf",function(){
@@ -1141,9 +1194,9 @@ var tl = new TimelineLite();
 	});
 	$(document).on("mouseleave", "#njpf", function(){
 		$("#flaptitle").text(general[0].num2);
-		tl.to("#flaptext", 0.2, {opacity:0})
-		.to("#flaptitle", 0.2, {opacity:0})
-		.to("#njpfFlap", 0.5, {width:"0%"});
+		tl.to("#flaptext", 0.01, {opacity:0})
+		.to("#flaptitle", 0.01, {opacity:0})
+		.to("#njpfFlap", 0.01, {width:"0%"});
 	});	
 });
 

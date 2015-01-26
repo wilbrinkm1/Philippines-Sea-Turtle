@@ -37,32 +37,7 @@
 
 <script>
 
-var map;
-    $(document).ready(function(){
-      map = new GMaps({
-        el: '#map',
-        lat: 40.5651428,
-        zoom: 15,
-        lng: -74.59591769999997
-      });
-      map.addMarker({
-        lat: 40.5651428,
-        lng: -74.59591769999997,
-        title: 'Western Technologies Group LLC',
-        infoWindow: {
-          content: '<p>Western Technologies Group LLC</p>'
-        },
-        details: {
-          database_id: 42,
-          author: 'HPNeo'
-        },
-        mouseover: function(e){
-          if(console.log)
-            console.log(e);
-        }
-      });
-     
-    });
+
 
 
 
@@ -103,6 +78,14 @@ var map;
     </div>
 </div>
 </div>
+<a id="logintab" href="#!">LOG IN</a>
+<!--
+<div id="loginTab">
+
+</div>
+-->
+
+
 
 <div id="slideHold"></div>
 
@@ -118,7 +101,7 @@ var map;
 	<div id="njpfFlap" style="background-color: #003366;">	
 	<p id="flaptitle"></p>
 	<p id="flaptext">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-</div>
+	</div>
 </div>
 
 <div id="aboutsection">
@@ -181,7 +164,7 @@ var map;
 
 <div id="floodresourceSection">
 	<img src="media/landing/WTGFRC.png" id="FRseal"/>
-	<p id="floodresourceTitle">FLOOD RESOURCE CENTER</p>
+	<p id="floodresourceTitle" class="link">FLOOD RESOURCE CENTER</p>
 <!--	<p style="font-size: 3em; width: 100%; text-align: center; background-color: #003366; color: #ffffff;">FLOOD RESOURCE CENTER</p> -->
 	<p id="videolinkFR" class="sectionlink link">Understanding Flood (Video)</p>
 	<p id="FRlinks" class="sectionlink link" style="color: #ffffff;">Flood Links</p>
@@ -198,7 +181,7 @@ var map;
 	<div id="floodlinksWrapper" class="FR">
 		<iframe src="" id="linkpreviewer" scrolling="auto" sandbox="allow-same-origin allow-scripts"></iframe>
 		<div id="FRlinkbox">
-			<a href="http://www.nhc.noaa.gov/" id="FRlink0" class="FRlink-class">National Hurricane Center</a>
+	<!--	<a href="http://www.nhc.noaa.gov/" id="FRlink0" class="FRlink-class">National Hurricane Center</a> -->
 			<a href="https://www.floodsmart.gov/floodsmart/pages/flooding_flood_risks/map_update_schedule.jsp" id="FRlink1" class="FRlink-class">Flood Map Update Schedule (FEMA)</a>
 			<a href="https://www.floodsmart.gov/floodsmart/pages/commercial_coverage/cc_overview.jsp" id="FRlink2" class="FRlink-class">Commercial Flood Coverage (FEMA)</a>
 			<a href="http://www.state.nj.us/dca/divisions/sandyrecovery/" id="FRlink3" class="FRlink-class">State of New Jersey, Sandy Recovery Division</a>
@@ -219,7 +202,7 @@ var map;
 
 <div id="floodDeterminationSection">
 	<img src="media/landing/seal_color.png" id="FDseal"/>
-	<p id="floodDeterminationTitle">FLOOD DETERMINATION</p>
+	<p id="floodDeterminationTitle" class="link">FLOOD DETERMINATION</p>
 	<p id="SFHA" class="sectionlink" style="margin-left: 32%;">Flood Zone Descriptions</p>
 	<a href="" class="sectionlink">FAQs</a>
 	<p id="FDlink" class="sectionlink" style="border: none; margin-right: 25%; margin-bottom: 2%;">Sample Reports</a>
@@ -248,7 +231,7 @@ var map;
 		    <p id="FDblock5" class="blocktext">Zone AH</p>
 		    <p id="FDblock6" class="blocktext">Zone AO</p>
 		    <p id="FDblock7" class="blocktext">Zone VE</p>
-		    <p id="FDblock8" class="blocktext">Zone D</p>
+		    <p id="FDblock9" class="blocktext">Zone D</p>
 		</div>
 	</div>	
 	<div id="docsContainerFD" class="FD">
@@ -304,8 +287,8 @@ var map;
 </div>
 
 <div id="propertyPeakSection">
+	<p id="PPheader">PROPERTY PEEK REPORT</p>
 	<img src="media/landing/seal_color.png" id="FDseal3"/>
-	<p id="PPheader" style="font-size: 3em; width: 100%; padding-top: 3%; height: auto; text-align: center; color: #003366;">PROPERTY PEEK REPORT</p>
 	<a href="" class="sectionlink" style="color: #003366; margin-left: 35.5%;">PROPERTY PEEK REPORT</a>
 	<a href="" class="sectionlink" style="color: #003366;">FAQs</a>
 	<a href="" class="sectionlink" style="color: #003366; border: none; margin-right: 20%;">Sample Reports</a>
