@@ -7,7 +7,7 @@
 		overflow-x: hidden;
 	}
 
-	p, div {
+	p, div, h1, h2, h3, h4, a {
 		-webkit-margin-before: 0em;
 		-webkit-margin-after: 0em;
 		-webkit-margin-start: 0px;
@@ -205,7 +205,7 @@
 	}
 
 	#FDlogotrigger {
-		margin-top: 270%;
+		margin-top: 263%;
 	}
 
 	#navwrapper {
@@ -219,7 +219,7 @@
 	   -webkit-box-shadow: -1px 13px 28px -2px rgba(0,0,0,0.75);
 		-moz-box-shadow: -1px 13px 28px -2px rgba(0,0,0,0.75);
 		box-shadow: -1px 13px 28px -2px rgba(0,0,0,0.75); 
-	    z-index: 10;
+	    z-index: 99;
 	}
 
 	.nav-container {
@@ -232,62 +232,6 @@
 	    font-size: 1.5em;
 	    z-index: 10;
 	}
-
-	#logintab {
-		width: 13%;
-		position: fixed;
-	    top: 120px;
-	    right: 0px;
-	    text-align: center;
-	    vertical-align: middle;
-	    padding: 12px 24px 4px 24px;
-	    border: 1px solid #002e5c;
-	    border-radius: 5px;
-	    background: #73a3d4;
-	    background: -webkit-gradient(linear, left top, left bottom, from(#73a3d4), to(#002e5c));
-	    background: -moz-linear-gradient(top, #73a3d4, #002e5c);
-	    background: linear-gradient(to bottom, #73a3d4, #002e5c);
-	    -webkit-box-shadow: #000000 0px 0px 10px 0px;
-	    -moz-box-shadow: #000000 0px 0px 10px 0px;
-	    box-shadow: #000000 0px 0px 10px 0px;
-	    text-shadow: #001a33 1px 1px 1px;
-	    font: italic normal bold 20px arial;
-	    color: #ffffff;
-	    text-decoration: none;
-	    z-index: 9;
-	}
-
-	#logintab: hover,
-	#logintab: focus {
-		border: 1px solid #003366;
-	    background: #8ac4fe;
-	    background: -webkit-gradient(linear, left top, left bottom, from(#8ac4fe), to(#00376e));
-	    background: -moz-linear-gradient(top, #8ac4fe, #00376e);
-	    background: linear-gradient(to bottom, #8ac4fe, #00376e);
-	    color: #ffffff;
-	    text-decoration: none;
-	}
-
-	#logintab: active {
-		 background: #45627f;
-	    background: -webkit-gradient(linear, left top, left bottom, from(#45627f), to(#002e5c));
-	    background: -moz-linear-gradient(top, #45627f, #002e5c);
-	    background: linear-gradient(to bottom, #45627f, #002e5c);
-	}
-
-	#logintab: after {
-    display: inline-block;
-    height: 24px;
-    width: 24px;
-    line-height: 24px;
-    margin: 0 -4px -6px 4px;
-    position: relative;
-    top: 0px;
-    left: 8px;
-    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA+UlEQVRIibWUvQ3CMBCFvwRKRqGio8saNIgFWCFSWAQxCALRsEA2gTaCIrY4jHM5EudJVv58fpd37w7gNXJVKJgHzzfgCjTATAt0eyp3VSGzaYALUPQFiVj1D0ICuTxR3hNbaodrwYUjOfck6KVc/ksgiSy4A7vYB4tTLPB7T8DCvwxdZEFJK4t3j7wH2AIrYAPUmTHDLMjUgiewt9RgFIZIdOh4L+1a4ySC9EU+Ioo8lkB28oOITYdIFMI7aI2TRCJFkX0n/xyeikBFCgJ1XKeUKAprka1WjRJc6Z+YXc0F7UhXkfOZ/WMazQRP1ExFEBJNRgDf0g3GG/KwbJRWWJpzAAAAAElFTkSuQmCC") no-repeat left center transparent;
-    background-size: 100% 100%;
-	}
-
 
 	.navlogo-container {
 		width: 15%;
@@ -353,14 +297,231 @@
 		text-align: right;
 	    text-decoration: none;
 	    color: #A9A9A9;
-   		font-family: 'Noto Sans', sans-serif;
+   		font-family: 'Noto Sans', sans-serif;\
+	}
 
+	#logintab {
+		width: 13%;
+		position: fixed;
+	    top: 120px;
+	    right: 0px;
+	    text-align: center;
+	    vertical-align: middle;
+	    padding: 12px 24px 4px 24px;
+	    border: 1px solid #002e5c;
+	    border-radius: 5px;
+	    background: #73a3d4;
+	    background: -webkit-gradient(linear, left top, left bottom, from(#73a3d4), to(#002e5c));
+	    background: -moz-linear-gradient(top, #73a3d4, #002e5c);
+	    background: linear-gradient(to bottom, #73a3d4, #002e5c);
+	    -webkit-box-shadow: #000000 0px 0px 10px 0px;
+	    -moz-box-shadow: #000000 0px 0px 10px 0px;
+	    box-shadow: #000000 0px 0px 10px 0px;
+	    text-shadow: #001a33 1px 1px 1px;
+	    font: italic normal bold 20px arial;
+	    color: #ffffff;
+	    text-decoration: none;
+	    z-index: 9;
+	}
+
+	#logintab: hover,
+	#logintab: focus {
+		border: 1px solid #003366;
+	    background: #8ac4fe;
+	    background: -webkit-gradient(linear, left top, left bottom, from(#8ac4fe), to(#00376e));
+	    background: -moz-linear-gradient(top, #8ac4fe, #00376e);
+	    background: linear-gradient(to bottom, #8ac4fe, #00376e);
+	    color: #ffffff;
+	    text-decoration: none;
+	}
+
+	#logintab: active {
+		 background: #45627f;
+	    background: -webkit-gradient(linear, left top, left bottom, from(#45627f), to(#002e5c));
+	    background: -moz-linear-gradient(top, #45627f, #002e5c);
+	    background: linear-gradient(to bottom, #45627f, #002e5c);
+	}
+
+	#logintab: after {
+	    display: inline-block;
+	    height: 24px;
+	    width: 24px;
+	    line-height: 24px;
+	    margin: 0 -4px -6px 4px;
+	    position: relative;
+	    top: 0px;
+	    left: 8px;
+	    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA+UlEQVRIibWUvQ3CMBCFvwRKRqGio8saNIgFWCFSWAQxCALRsEA2gTaCIrY4jHM5EudJVv58fpd37w7gNXJVKJgHzzfgCjTATAt0eyp3VSGzaYALUPQFiVj1D0ICuTxR3hNbaodrwYUjOfck6KVc/ksgiSy4A7vYB4tTLPB7T8DCvwxdZEFJK4t3j7wH2AIrYAPUmTHDLMjUgiewt9RgFIZIdOh4L+1a4ySC9EU+Ioo8lkB28oOITYdIFMI7aI2TRCJFkX0n/xyeikBFCgJ1XKeUKAprka1WjRJc6Z+YXc0F7UhXkfOZ/WMazQRP1ExFEBJNRgDf0g3GG/KwbJRWWJpzAAAAAElFTkSuQmCC") no-repeat left center transparent;
+	    background-size: 100% 100%;
+	}
+
+	#loginScrollbox {
+		width: 34%;
+		height: auto;
+		position: fixed;
+		z-index: 11;
+		top: 150px;
+		right: 25%;
+		opacity: 1;
+		background-color: rgba(0,0,0,0.7);
+		border: 3px solid #003366;
+	}
+
+	#logintitle {
+		margin: 2% 0%;
+		text-align: center;
+		font-size: 1.2em;
+		color: #ffffff;
+	}
+
+
+	.login-input {
+		width: 45.6%;
+		float: left;
+		margin: 3% 0% 1% 3%;
+		display: inline-block;
+		color:#3c3c3c;
+		font-family: Helvetica, Arial, sans-serif;
+	  	font-weight:500;
+		font-size: 0.9em;
+		border-radius: 0;
+		line-height: 22px;
+		background-color: #fbfbfb;
+		padding: 13px 13px 13px 54px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		box-sizing: border-box;
+	 	border: 3px solid #003366;
+	}
+
+	.login-input:hover,
+	.login-input:focus {
+		box-shadow: 0;
+		border: 3px solid #3498db;
+		color: #3498db;
+		outline: none;
+	 	padding: 13px 13px 13px 54px;
+	 	cursor: pointer;
+	}
+
+	.login-icon1 {
+		background-image: url('../media/login_icon.png');
+		background-size: 30px 30px;
+		background-position: 11px 8px;
+		background-repeat: no-repeat;
+	}
+
+	.login-icon2 {
+		background-image: url('../media/request_account_icon.png');
+		background-size: 30px 30px;
+		background-position: 11px 8px;
+		background-repeat: no-repeat;		
+	}
+
+	#loginSubmit {
+	    display: inline-block;
+	    text-align: center;
+	    vertical-align: middle;
+	    padding: 7px 24px;
+	    margin: 2% 3%;
+	    border: 1px solid #000000;
+	    border-radius: 8px;
+	    background: #62a1e0;
+	    background: -webkit-gradient(linear, left top, left bottom, from(#62a1e0), to(#003366));
+	    background: -moz-linear-gradient(top, #62a1e0, #003366);
+	    background: linear-gradient(to bottom, #62a1e0, #003366);
+	    text-shadow: #000430 1px 1px 1px;
+	    font: normal normal 20px arial;
+	    color: #ffffff;
+	    text-decoration: none;
+	}
+	#loginSubmit:hover,
+	#loginSubmit:focus {
+	    background: #76c1ff;
+	    background: -webkit-gradient(linear, left top, left bottom, from(#76c1ff), to(#003d7a));
+	    background: -moz-linear-gradient(top, #76c1ff, #003d7a);
+	    background: linear-gradient(to bottom, #76c1ff, #003d7a);
+	    color: #ffffff;
+	    text-decoration: none;
+	}
+	#loginSubmit:active {
+	    background: #3b6186;
+	    background: -webkit-gradient(linear, left top, left bottom, from(#3b6186), to(#003366));
+	    background: -moz-linear-gradient(top, #3b6186, #003366);
+	    background: linear-gradient(to bottom, #3b6186, #003366);
+	}
+
+	#requestacct {
+	    display: inline-block;
+	    text-align: center;
+	    vertical-align: middle;
+	    padding: 7px 24px;
+	    margin: 2% 3%;
+	    border: 1px solid #a1a1a1;
+	    border-radius: 8px;
+	    background: #e6e6e6;
+	    background: -webkit-gradient(linear, left top, left bottom, from(#e6e6e6), to(#a1a1a1));
+	    background: -moz-linear-gradient(top, #e6e6e6, #a1a1a1);
+	    background: linear-gradient(to bottom, #e6e6e6, #a1a1a1);
+	    text-shadow: #ffffff 1px 1px 1px;
+	    font: normal normal normal 20px arial;
+	    color: #111111;
+	    text-decoration: none;
+	}
+	#requestacct:hover,
+	#requestacct:focus {
+	    border: 1px solid #e6e6e6;
+	    background: #ffffff;
+	    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#c1c1c1));
+	    background: -moz-linear-gradient(top, #ffffff, #c1c1c1);
+	    background: linear-gradient(to bottom, #ffffff, #c1c1c1);
+	    color: #111111;
+	    text-decoration: none;
+	}
+	#requestacct:active {
+	    background: #a1a1a1;
+	    background: -webkit-gradient(linear, left top, left bottom, from(#a1a1a1), to(#a1a1a1));
+	    background: -moz-linear-gradient(top, #a1a1a1, #a1a1a1);
+	    background: linear-gradient(to bottom, #a1a1a1, #a1a1a1);
+	}
+
+	#loginbottomwrapper {
+		width: 100%;
+		height: auto;
+		background-color: #E6E6E6;
+	}
+
+	#logintext1 {
+		text-align: left;
+		font-size: 1em;
+		display: block;
+		color: #000000;
+		padding-left: 3.9%;
+	}
+
+	#logintext2 {
+		text-align: left;
+		font-size: 1em;
+		display: block;
+		color: #000000;
+		padding-left: 3.9%;
+	}
+
+	#logintext1 > span {
+		color: #003366;
+		cursor: pointer;
+	}
+
+	#logintext2 > span {
+		color: #003366;
+		cursor: pointer;
 	}
 
 	#landingdiv {
 		width: 100%;
 		max-width: 1440px;
-		height: 700px;
+		height: 620px;
 		margin-top: 10%;
 	}
 
@@ -411,10 +572,9 @@
 	
 	#njpfFlap {
 		width: 0%;
-		height: 680px;
+		height: 640px;
 		float: right;
-		opacity: 0.5;
-		background-color: #000000;
+		background-color: rgba(0,0,0,0.7);
 		border-radius: 5px;
 	}
 
@@ -428,32 +588,38 @@
 	#flaptitle {
 		width: 100%;
 		text-align: center;
-		padding: 20% 0%;
+		padding: 10% 0% 2% 0%;
 		opacity: 0;
-		font-size: 2em;
+		font-size: 1.5em;
 		color: white;
 	}
 
-	#flaptext {
-		width: 90%;
+	.flap-text {
+		width: 80%;
 		height: auto;
-		text-align: center;
-		margin: 3% 5%;
+		text-align: justify;
+		margin: 3% 10%;
 		opacity: 0;
-		font-size: 1.2em;
+		font-size: 1em;
 		color: white;
 	}
 
 	#aboutsection {
 		width: 100%;
-		height: 1350px;
+		height: 1050px;
 		display: block;
-		background-image: -webkit-gradient(linear,right bottom,right top,color-stop(0.39, #E8E8E8),color-stop(1, #FFFFFF));
-		background-image: -o-linear-gradient(top, #E8E8E8 9%, #FFFFFF 50%);
-		background-image: -moz-linear-gradient(top, #E8E8E8 9%, #FFFFFF 50%);
-		background-image: -webkit-linear-gradient(top, #E8E8E8 9%, #FFFFFF 50%);
-		background-image: -ms-linear-gradient(top, #E8E8E8 9%, #FFFFFF 50%);
-		background-image: linear-gradient(to top, #E8E8E8 9%, #FFFFFF 50%);
+		background-image: -webkit-gradient(
+	linear,
+	right bottom,
+	right top,
+	color-stop(0, #FFFFFF),
+	color-stop(1, #FAFAFA)
+);
+background-image: -o-linear-gradient(top, #FFFFFF 0%, #FAFAFA 100%);
+background-image: -moz-linear-gradient(top, #FFFFFF 0%, #FAFAFA 100%);
+background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #FAFAFA 100%);
+background-image: -ms-linear-gradient(top, #FFFFFF 0%, #FAFAFA 100%);
+background-image: linear-gradient(to top, #FFFFFF 0%, #FAFAFA 100%);
 	}
 
 	#aboutpic1 {
@@ -517,22 +683,30 @@
 	}
 
 	#priorityImg {
-		width: 25%;
-		margin: 0% 0% 0% 0%;
-		padding: 2% 5% 0% 20%;
-		float: left;
-		opacity: 1;
-		display: inline-block;
+
 	}
 
 	#capitalImg {
-		width: 25%;
-		margin: 0%;
-		padding: 6% 15% 5% 5%;
-		float: left;
-		opacity: 1;
-		display: inline-block;
+
 	}	
+
+	.partner-image1 {
+		width: 19%;
+		height: auto;
+		padding: 2% 3%;
+		margin: 0%;
+		display: inline-block;
+		float: left;
+	}
+
+	.partner-image2 {
+		width: 19%;
+		height: auto;
+		padding: 2% 3%;
+		margin: 0%;
+		display: inline-block;
+		float: left;
+	}
 
 	#preziTitle {
 		width: 100%;
@@ -554,7 +728,7 @@
 		height: 10px;
 		position: absolute;
 		z-index: 15;
-		margin-top: 145.7%;
+		margin-top: 117.7%;
 		background-color: blue;
 	}
 
@@ -712,10 +886,20 @@
 
 	#videolinkFR {
 		color: #ffffff;
-		margin-left: 30.1%;
+		margin-left: 33.1%;
 	}
 
-	#landingpicFR {
+	#wowslider-container1 {
+		width: 40%;
+		height: auto;
+		padding: 5% 2% 0% 7.5%;
+		display: inline-block;
+		float: left;
+		z-index: 1;
+		border-radius: 10px;
+	}
+
+	.landingpicFR {
 		width: 40%;
 		height: auto;
 		margin: 5% 2% 0% 7.5%;
@@ -730,6 +914,7 @@
 		margin: 5% 0% 0% 0%;
 		float: left;
 		display: inline-block;
+
 	}
 
 	#landingtitleFR {
@@ -766,7 +951,7 @@
 	#FRvideo {
 		width: 70%;
 		height: 50%;
-		margin: 0% 15%;
+		margin: 5% 15% 0% 15%;
 		padding-top: 2%;
 		display: none;
 	}
@@ -880,9 +1065,9 @@ background-image: linear-gradient(to top, #003366 0%, #FFFFFF 100%);
 		margin: 15% 0% 0% 15%;
 		z-index: 3;
 		position: absolute;
-		background-color: rgba(0,0,0,0.5);
+		background-color: rgba(0,0,0,0.8);
 		opacity: 0;
-		border-radius: 15px;
+	/*	border-radius: 15px; */
 	}
 
 	#landingtitleFD {
@@ -967,8 +1152,8 @@ background-image: linear-gradient(to top, #003366 0%, #FFFFFF 100%);
 	#FDblock3 {
 		margin-left: 5%;
 	}	
-
-	.blocktext {
+/*	Flood Zone Description blue button */
+	.blocktextblue {
 		display: inline-block;
 	    text-align: center;
 	    vertical-align: middle;
@@ -989,24 +1174,169 @@ background-image: linear-gradient(to top, #003366 0%, #FFFFFF 100%);
 	    text-decoration: none;
 	    cursor: pointer;
 	}
-	.blocktext:hover,
-	.blocktext:focus {
+	.blocktextblue:hover,
+	.blocktextblue:focus {
 	    background: #3683d0;
 	    background: -webkit-gradient(linear, left top, left bottom, from(#3683d0), to(#003d7a));
 	    background: -moz-linear-gradient(top, #3683d0, #003d7a);
 	    background: linear-gradient(to bottom, #3683d0, #003d7a);
 	    color: #ffffff;
 	    text-decoration: none;
+	    cursor: pointer;
 	}
 
-	.blocktext:active {
+	.blocktextblue:active {
 	    background: #1b4168;
 	    background: -webkit-gradient(linear, left top, left bottom, from(#1b4168), to(#003366));
 	    background: -moz-linear-gradient(top, #1b4168, #003366);
 	    background: linear-gradient(to bottom, #1b4168, #003366);
 	}
+/* Zone X and X 0.2% buttons */
+	.zoneXbutton {
+	    display: inline-block;
+	    text-align: center;
+	    vertical-align: middle;
+	    margin: 1% 0.5%;
+	    padding: 12px 24px;
+	    border: 1px solid #498f25;
+	    border-radius: 8px;
+	    background: #76e93c;
+	    background: -webkit-gradient(linear, left top, left bottom, from(#76e93c), to(#498f25));
+	    background: -moz-linear-gradient(top, #76e93c, #498f25);
+	    background: linear-gradient(to bottom, #76e93c, #498f25);
+	    -webkit-box-shadow: #6dd737 0px 0px 10px 0px;
+	    -moz-box-shadow: #6dd737 0px 0px 10px 0px;
+	    box-shadow: #6dd737 0px 0px 10px 0px;
+	    text-shadow: #2e5a17 1px 1px 1px;
+	    font: normal normal bold 20px arial;
+	    color: #ffffff;
+	    text-decoration: none;
+	}
+	.zoneXbutton:hover,
+	.zoneXbutton:focus {
+	    border: 1px solid #5bb32e;
+	    background: #8eff48;
+	    background: -webkit-gradient(linear, left top, left bottom, from(#8eff48), to(#58ac2c));
+	    background: -moz-linear-gradient(top, #8eff48, #58ac2c);
+	    background: linear-gradient(to bottom, #8eff48, #58ac2c);
+	    color: #ffffff;
+	    text-decoration: none;
+	    cursor: pointer;
+	}
+	.zoneXbutton:active {
+	    background: #498f25;
+	    background: -webkit-gradient(linear, left top, left bottom, from(#498f25), to(#498f25));
+	    background: -moz-linear-gradient(top, #498f25, #498f25);
+	    background: linear-gradient(to bottom, #498f25, #498f25);
+	}
 
+/*	Flood Zone Description orange button */
+	.blocktextorange {
+	    display: inline-block;
+	    text-align: center;
+	    vertical-align: middle;
+	    margin: 1% 0.5%;
+	    padding: 12px 24px;
+	    border: 1px solid #af5920;
+	    border-radius: 8px;
+	    background: #ff9034;
+	    background: -webkit-gradient(linear, left top, left bottom, from(#ff9034), to(#af5920));
+	    background: -moz-linear-gradient(top, #ff9034, #af5920);
+	    background: linear-gradient(to bottom, #ff9034, #af5920);
+	    -webkit-box-shadow: #ff8530 0px 0px 10px 0px;
+	    -moz-box-shadow: #ff8530 0px 0px 10px 0px;
+	    box-shadow: #ff8530 0px 0px 10px 0px;
+	    text-shadow: #6e3814 1px 1px 1px;
+	    font: normal normal bold 20px arial;
+	    color: #ffffff;
+	    text-decoration: none;
+	}
+	.blocktextorange:hover,
+	.blocktextorange:focus {
+	    border: 1px solid #db6f28;
+	    background: #ffad3e;
+	    background: -webkit-gradient(linear, left top, left bottom, from(#ffad3e), to(#d26b26));
+	    background: -moz-linear-gradient(top, #ffad3e, #d26b26);
+	    background: linear-gradient(to bottom, #ffad3e, #d26b26);
+	    color: #ffffff;
+	    text-decoration: none;
+	    cursor: pointer;
+	}
+	.blocktextorange:active {
+	    background: #af5920;
+	    background: -webkit-gradient(linear, left top, left bottom, from(#af5920), to(#af5920));
+	    background: -moz-linear-gradient(top, #af5920, #af5920);
+	    background: linear-gradient(to bottom, #af5920, #af5920);
+	}
 	
+
+
+	#faqcontainerFD {
+		width: 100%;
+		height: 650px;
+		display: none;
+	}
+
+	.question-wrapper {
+		width: 45%;
+		height: auto;	
+		padding: 0%;
+		margin: 5% 0% 0% 5%;
+		display: inline-block;
+		float: left;	
+	}
+
+	.question-title {
+		width: 90%;
+		height: auto;
+		padding: 2% 5% 1% 5%;
+		margin: 0%;
+		display: block;
+		font-size: 1.7em;
+		text-align: center;
+	}
+
+	.question-text {
+		width: 90%;
+		height: auto;
+		padding: 0.5% 5% 0.5% 0%;
+		margin: 1% 0% 0% 0%;
+		font-size: 1em;
+		text-align: left;
+		cursor: pointer;
+	}
+
+	.answer-wrapper {
+		width: 35%;
+		height: 90%;
+		padding: 0%;
+		margin: 5% 0% 0% 5%;
+		display: inline-block;
+		float: left;
+		background-color: rgba(0,0,0,0.8);
+	}
+
+	.answer-title {
+		width: 90%;
+		height: auto;
+		padding: 2% 5% 1% 5%;
+		margin: 0%;
+		display: block;
+		font-size: 1.7em;
+		text-align: center;
+	}
+
+	.answer-text {
+		width: 90%;
+		height: auto;
+		padding: 2% 5% 1% 5%;
+		margin: 0%;
+		display: block;
+		font-size: 1em;
+		text-align: center;
+		cursor: pointer;
+		color: #ffffff;	
+	}
 
 	#docsContainerFD {
 		width: 100%;
@@ -1102,9 +1432,9 @@ background-image: linear-gradient(to top, #003366 0%, #FFFFFF 100%);
 		z-index: 8;
 		position: absolute;
 		float: left;
-		background-color: rgba(0,0,0,0.65);
+		background-color: rgba(0,0,0,0.8);
 		opacity: 0;
-		border-radius: 15px;
+	/*	border-radius: 15px; */
 	}
 
 	#landingtitleTL {
@@ -1138,15 +1468,6 @@ background-image: linear-gradient(to top, #003366 0%, #FFFFFF 100%);
 		background-color: #ffffff;
 	}
 
-
-
-	#FDseal3 {
-		width: 15%;
-		padding: 1% 0% 0% 2%;
-		position: absolute;
-		z-index: 7;
-		float: left;
-	}
 	#PPheader {
 		width: 100%;
 		padding-top: 3%;
@@ -1176,9 +1497,9 @@ background-image: linear-gradient(to top, #003366 0%, #FFFFFF 100%);
 		z-index: 8;
 		position: absolute;
 		float: left;
-		background-color: rgba(0,0,0,0.65);
+		background-color: rgba(0,0,0,0.8);
 		opacity: 0;
-		border-radius: 15px;
+	/*	border-radius: 15px; */
 	}
 
 	#landingtitlePP {

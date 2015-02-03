@@ -2,13 +2,36 @@
 //	Objects
 
 var general = [
+																				//	BOOKFLAP ARRAYS
+	// 	0 	
 	{
-		num0: "FLOOD CENTER",
-		num1: "NJ FLOOD",
-		num2: "NEW JERSEY PROPERTY FAX",
-		num3: "media/landing/water_1280x576.jpg"
-	}
-
+		num0: "FLOOD RESOURCE CENTER",
+		num1: "\"Defining industry \'best-practices\' when it comes to reports, information, training, customer services, and consulting related to Flood & Tidelands.\"",
+		num2: "Staffed by Certified Floodplain Mangers with Local Knowledge and Extensive Experience.",
+		num3: "We are Your Flood Resource."
+	},
+	//	1
+	{
+		num0: "NJFLOOD",
+		num1: "Know your true flood status.  NJFlood.com is for home buyers, property owners, and non-subscribing professionals who need information on Flood, Tidelands, Tax data, and property information.  Powered by the WTG Flood Resource Center, the site can help answer key questions the public may have about their property.",
+		num2: "As a WTG or NJPropertyFax client you can link to NJFlood.com from your homepage; offering your clients access to our high quality reports and resources.  This link is also a lead generator and great promotional outlet for your business.",
+		num3: "Confirm, Challenge, Know Your True Flood Status, NJFlood.com"
+	},
+	//	2
+	{
+		num0: "NJ PROPERY FAX",
+		num1: "The market is changing, buyers and sellers are more tech-savvy and want the best information.  They want to be more involved and informed than ever before.  They don't want surprises.",
+		num2: "NJ Property Fax, a Division of Western Technologies Group, provides New Jersey Realtors, engineers, attorneys, appraisers, surveyors, and other professionals access to in-depth property information and maps, specialized reports (Flood Determination, Tidelands Report, Property Peek Report), Tax maps and data, LOMA application services, educational and training programs, business development tools, and the best customer service in the industry.",
+		num3: "This subscription-based service is a ’must-have’ for professionals who create or service the real estate transaction."
+	},
+																				//	LANDING PAGE ROTATING IMAGES SRC'S
+	//	3
+	{
+		num0: "media/landing/landing_pic00.png",
+		num1: "media/landing/landing_pic01.png",
+		num2: "media/landing/landing_pic02.png",
+		num3: "media/landing/landing_pic03.png"
+	}	
 ]
 
 
@@ -25,9 +48,9 @@ var info = [
 	{
 		num0: "media/landing/industry/title_agents.png",
 		num1: "TITLE AGENCIES",
-		num2: "Title Agencies Quick Info: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-		num3: "Learn More",
-		num4: ""
+		num2: "Our Title clients are at the very core of our success at Western Technologies.  In New Jersey, Tidelands searches are required in all but four counties (Warren, Hunterdon, Sussex and Morris).  Knowing if the State has a riparian claim on a property is key to clearing title for transfer.",
+		num3: "As we developed this market, we built our Tidelands Report around the needs of the Title industry; providing the most accurate, useful and timely information available.",
+		num4: "Recently, Title Agencies are running an increasing number of Flood Determinations for Realtors and Attorneys; helping them support their clients in the home buying decisions."
 	},
 	//	2 	Realtor Industry 	
 	{
@@ -42,8 +65,8 @@ var info = [
 		num0: "media/landing/mortgage_banks.png",
 		num1: "BANKS & MORTGAGE LENDERS",
 		num2: "Accurate information on flood status is key to managing risk for your loan portfolio.  The WTG Flood Determination sets the industry standard for accuracy and excellence in reporting.  Our insured reports include the Standard FEMA form, Visual Verification (D-FIRM), and Advisory/Preliminary maps if available.  The reports are customizable to best suit you needs and format.  And our Life-of-Loan program provides real-time notification as new D-FIRM maps are updated.",
-		num3: "We offer the best there is and our customer service sets a whole new standard for the industry. We are on both Encompass and Calyx platforms, and make integration into your current process easy and seamless. ",
-		num4: "Mortgage Banks Quick Info: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore"
+		num3: "We offer the best there is and our customer service sets a whole new standard for the industry. We are on both Encompass and Calyx platforms, and make integration into your current process easy and seamless.",
+		num4: "WTG is also available to conduct a Flood Audit on your current portfolio to ensure accuracy and compliance issues."
 
 	},
 	// 4 	Engineers & Surveyors 
@@ -152,6 +175,40 @@ var info = [
 	}
 ]
 
+
+//	Object containing answers to each question in each individual sections (Flood Determination, Tidelands, Property Peek)
+
+var faq = [
+	//	 																	FLOOD DETERMINATION FAQ ANSWERS
+	//
+	{
+		num0: "",
+		num1: ""
+	},
+	//	
+	{
+		num0: "",
+		num1: ""
+	},
+	//	
+	{
+		num0: "",
+		num1: ""
+	},
+	//	
+	{
+		num0: "",
+		num1: ""
+	},
+	//	
+	{
+		num0: "",
+		num1: ""
+	},
+
+]
+
+
 //	Animations, DOM set on page load
 
 $(document).ready(function($) {
@@ -170,20 +227,57 @@ $(document).ready(function($) {
 		.from("#navlogo", 0.75, {xPercent: -100})
 		.to("#navlogo", 0.75, {opacity: 1}, "-=0.75")
 		.to("#navtitle", 1.2, {text:"WESTERN TECHNOLOGIES GROUP LLC", ease:Linear.easeNone})
-		.from("#floodcenter", 0.75, {xPercent: -100})
+		.from("#floodcenter", 0.75, {xPercent: -100}, "-=0.5")
 		.to("#floodcenter", 0.75, {opacity: 1}, "-=0.75")
-		.from("#njflood", 0.75, {xPercent: -100}, "-=0.3")
+		.from("#njflood", 0.75, {xPercent: -100}, "-=0.5")
 		.to("#njflood", 0.75, {opacity: 1}, "-=0.75")
-		.from("#njpf", 0.75, {xPercent: -100}, "-=0.3")
+		.from("#njpf", 0.75, {xPercent: -100}, "-=0.5")
 		.to("#njpf", 0.75, {opacity: 1}, "-=0.75")
 		.from("#logindummy", 0.75, {yPercent: 100})
-		.to("#logindummy", 0.75, {opacity: 1, onComplete: changeLanding}, "-=0.75");        
+		.to("#logindummy", 0.75, {opacity: 1, onComplete: changeLanding1}, "-=0.75");        
 	}
-	function changeLanding() {
+	function changeLanding1() {
 		var tl = new TimelineMax()
-		.to("#landingImage", 0.5, {opacity: 0})
-		.set("#landingImage", {attr:{ src : general[0].num3}})
-		.to("#landingImage", 0.5, {opacity: 1});
+		.to("#landingImage", 0.5, {opacity: 0, delay: 5})
+		.set("#landingImage", {attr:{ src : general[3].num1}})
+		.to("#landingImage", 0.5, {opacity: 1, onComplete: changeLanding2});
+	}
+	function changeLanding2() {
+		var tl = new TimelineMax()
+		.to("#landingImage", 0.5, {opacity: 0, delay: 5})
+		.set("#landingImage", {attr:{ src : general[3].num2}})
+		.to("#landingImage", 0.5, {opacity: 1, onComplete: changeLanding3});
+	}
+	function changeLanding3() {
+		var tl = new TimelineMax()
+		.to("#landingImage", 0.5, {opacity: 0, delay: 5})
+		.set("#landingImage", {attr:{ src : general[3].num3}})
+		.to("#landingImage", 0.5, {opacity: 1, onComplete: changeLandingHold});
+	}
+	function changeLandingHold() {
+		i = Math.floor((Math.random() * 3) + 1);
+		if (i === 0) {
+		var tl = new TimelineMax()
+			.to("#landingImage", 0.5, {opacity: 0, delay: 5})
+			.set("#landingImage", {attr:{ src : general[3].num0}})
+			.to("#landingImage", 0.5, {opacity: 1});
+		} else if (i === 1) {
+		var tl = new TimelineMax()
+			.to("#landingImage", 0.5, {opacity: 0, delay: 5})
+			.set("#landingImage", {attr:{ src : general[3].num1}})
+			.to("#landingImage", 0.5, {opacity: 1});
+		} else if (i === 2) {
+		var tl = new TimelineMax()
+			.to("#landingImage", 0.5, {opacity: 0, delay: 5})
+			.set("#landingImage", {attr:{ src : general[3].num2}})
+			.to("#landingImage", 0.5, {opacity: 1});
+		} else if (i === 3) {
+		var tl = new TimelineMax()
+			.to("#landingImage", 0.5, {opacity: 0, delay: 5})
+			.set("#landingImage", {attr:{ src : general[3].num3}})
+			.to("#landingImage", 0.5, {opacity: 1});
+		}
+		console.log(i);
 	}
 });
 
@@ -211,7 +305,7 @@ $(document).ready(function($) {
 	// build tween
 	var tween = new TimelineMax()
 	.add (
-		TweenLite.to(navcontainer, 1, {scale: 0.75, top: "-4.5%"})
+		TweenLite.to(navcontainer, 1, {scale: 0.7, top: "-2.5%"})
 	)/*
 	.add (
 		TweenLine.to()
@@ -233,7 +327,7 @@ $(document).ready(function($) {
 	// build tween
 	var tween = new TimelineMax()
 	.add (
-		TweenLite.to(navwrapper, 1, {height: "120px"})
+		TweenLite.to(navwrapper, 1, {height: "115px"})
 	)
 	var scene = new ScrollScene({triggerElement: "#shrinkNav"})
 		.setTween(tween)
@@ -246,6 +340,24 @@ $(document).ready(function($) {
 
 
 
+
+																					//	loginScrollBox move position once leave landing page. 
+
+$(document).ready(function($) {
+	if (widthcheck > 1024) {
+	// build tween
+	var tween = new TimelineMax()
+	.add (
+		TweenLite.to(loginScrollbox, 1, {right: "0%", opacity: 0})
+	)
+	var scene = new ScrollScene({triggerElement: "#shrinkNav"})
+		.setTween(tween)
+		.addTo(controller);	
+		console.log("shrinkNav and Login tab fired")
+	} else {
+		console.log("under 1024");
+	}
+});
 
 																					//	Login tab appears underneath scaled-down navbar
 
@@ -254,7 +366,7 @@ $(document).ready(function($) {
 	// build tween
 	var tween = new TimelineMax()
 	.add (
-		TweenLite.from(logintab, 1, {top: "90px"})
+		TweenLite.from(logintab, 1, {top: "115px"})
 	)
 	var scene = new ScrollScene({triggerElement: "#shrinkNav"})
 		.setTween(tween)
@@ -265,9 +377,6 @@ $(document).ready(function($) {
 	}
 });
 
-
-
-																					//	Onclick Login Tab
 
 
 
@@ -280,7 +389,7 @@ $(document).ready(function($) {
 	// build tween
 	var tween = new TimelineMax()
 	.add (
-		TweenLite.from(priorityImg, 0.75, {opacity: 0, paddingTop: "8%"})
+		TweenLite.from(".partner-image1", 0.75, {opacity: 0, paddingTop: "8%"})
 	)
 	var scene = new ScrollScene({triggerElement: "#partnerstrigger"})
 		.setTween(tween)
@@ -295,7 +404,7 @@ $(document).ready(function($) {
 	// build tween
 	var tween = new TimelineMax()
 	.add (
-		TweenLite.from(capitalImg, 0.75, {opacity: 0, paddingTop: "12%"})
+		TweenLite.from(".partner-image2", 0.75, {opacity: 0, paddingTop: "12%"})
 	)
 	var scene = new ScrollScene({triggerElement: "#partnerstrigger"})
 		.setTween(tween)
@@ -327,6 +436,22 @@ $(document).ready(function($) {
 
 
 
+																					//	Onclick Login Tab
+$(document).ready(function(){
+	$("#logintab").click(function(){
+		TweenLite.to("#loginScrollbox", 0.5, {display: "block", opacity: 0.9});
+		console.log("loginScrollbox fired");
+	});
+});
+
+
+
+
+/*======================================================================================================================*/
+
+																										//	LANDING PAGE JS
+
+					//		FLOODCENTER LOGO ONCLICK 																										
 
 
 
@@ -569,8 +694,18 @@ $(document).ready(function(){
 });
 
 
+//	FD FAQs
 
 
+//	FAQs link
+$(document).ready(function(){
+	$("#faqlinkFD").click(function(){
+		var tl = new TimelineMax()
+		tl.fromTo(".FD", 0.5, {opacity: 1, display: "inline-block"}, {opacity: 0, display: "none"})
+		  .fromTo("#faqcontainerFD", 1, {opacity: 0, display: "none"}, {opacity: 1, display: "inline-block"});
+		  console.log("faqcontainerFD works");
+	});
+});
 
 
 
@@ -638,24 +773,6 @@ $(document).ready(function(){
 
 /*======================================================================================================================*/
 																								//	PROPERTY PEEK SECTION
-
-
-//	Stamp logo
-$(document).ready(function($) {
-	if (widthcheck > 1024) {
-	// build tween
-	var tween = new TimelineMax()
-	.add (
-		TweenLite.from(FDseal3, 0.75, {opacity: 0, paddingLeft: "6%"})
-	)
-	var scene = new ScrollScene({triggerElement: "#PPheader"})
-		.setTween(tween)
-		.addTo(controller);	
-
-	} else {
-		console.log("under 1024");
-	}
-});
 
 
 // Hover landing
@@ -1158,43 +1275,49 @@ var map;
 
 $(document).ready(function(){
 var tl = new TimelineLite();
+	//	FLOOD CENTER LOGO ROLL OVER
 	$(document).on("mouseenter","#floodcenter",function(){
 		$("#flaptitle").text(general[0].num0);
-		tl.to("#njpfFlap", 0.01, {backgroundColor:"#000000"})
-		.to("#njpfFlap", 0.5, {width:"25%"})
+		$("#flaptext1").text(general[0].num1);
+		$("#flaptext2").text(general[0].num2);
+		$("#flaptext3").text(general[0].num3);
+		tl.to("#njpfFlap", 0.5, {width:"25%"})
 		.to("#flaptitle", 0.2, {opacity:1})
-		.to("#flaptext", 0.2, {opacity:1});
+		.to(".flap-text", 0.2, {opacity:1});
 	});
 	$(document).on("mouseleave", "#floodcenter", function(){
-		$("#flaptitle").text(general[0].num0);
-		tl.to("#flaptext", 0.01, {opacity:0})
+		tl.to(".flap-text", 0.01, {opacity:0})
 		.to("#flaptitle", 0.01, {opacity:0})
 		.to("#njpfFlap", 0.01, {width:"0%"});
 	});
 	$(document).on("mouseenter","#njflood",function(){
-		$("#flaptitle").text(general[0].num1);
-		tl.to("#njpfFlap", 0.01, {backgroundColor:"#000000"})
-		.to("#njpfFlap", 0.5, {width:"25%"})
+		$("#flaptitle").text(general[1].num0);
+		$("#flaptext1").text(general[1].num1);
+		$("#flaptext2").text(general[1].num2);
+		$("#flaptext3").text(general[1].num3);
+		tl.to("#njpfFlap", 0.5, {width:"25%"})
 		.to("#flaptitle", 0.2, {opacity:1})
-		.to("#flaptext", 0.2, {opacity:1});
+		.to(".flap-text", 0.2, {opacity:1});
 	});
 	$(document).on("mouseleave", "#njflood", function(){
 		$("#flaptitle").text(general[0].num1);
-		tl.to("#flaptext", 0.01, {opacity:0})
+		tl.to(".flap-text", 0.01, {opacity:0})
 		.to("#flaptitle", 0.01, {opacity:0})
 		.to("#njpfFlap", 0.01, {width:"0%"});
 	});
 
 	$(document).on("mouseenter","#njpf",function(){
-		$("#flaptitle").text(general[0].num2);
-		tl.to("#njpfFlap", 0.01, {backgroundColor:"#990000"})
-		.to("#njpfFlap", 0.5, {width:"25%"})
+		$("#flaptitle").text(general[2].num0);
+		$("#flaptext1").text(general[2].num1);
+		$("#flaptext2").text(general[2].num2);
+		$("#flaptext3").text(general[2].num3);
+		tl.to("#njpfFlap", 0.5, {width:"25%"})
 		.to("#flaptitle", 0.2, {opacity:1})
-		.to("#flaptext", 0.2, {opacity:1});
+		.to(".flap-text", 0.2, {opacity:1});
 	});
 	$(document).on("mouseleave", "#njpf", function(){
 		$("#flaptitle").text(general[0].num2);
-		tl.to("#flaptext", 0.01, {opacity:0})
+		tl.to(".flap-text", 0.01, {opacity:0})
 		.to("#flaptitle", 0.01, {opacity:0})
 		.to("#njpfFlap", 0.01, {width:"0%"});
 	});	
@@ -1221,7 +1344,22 @@ $(document).ready(function() {
 
 Previous Industry animations
 
+//	Stamp logo from Property Peek section, but took it out since we have 
+$(document).ready(function($) {
+	if (widthcheck > 1024) {
+	// build tween
+	var tween = new TimelineMax()
+	.add (
+		TweenLite.from(FDseal3, 0.75, {opacity: 0, paddingLeft: "6%"})
+	)
+	var scene = new ScrollScene({triggerElement: "#PPheader"})
+		.setTween(tween)
+		.addTo(controller);	
 
+	} else {
+		console.log("under 1024");
+	}
+});
 
 
 

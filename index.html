@@ -11,6 +11,8 @@
 <link rel="stylesheet" type="text/css" href="resources/gmaps-master/examples/examples.css" />
 <link rel="stylesheet" href="css/main.css">
 
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	<script type="text/javascript" src="engine1/jquery.js"></script>
 
 <script type="text/javascript" src="resources/ScrollMagic/js/_dependent/jquery.min.js"></script>
 <script type="text/javascript" src="resources/ScrollMagic/js/_dependent/greensock/TweenMax.min.js"></script>
@@ -59,48 +61,57 @@
 
 
 <div id="navwrapper">
-<div id="navcontainer"class="nav-container">
-	<div class="navlogo-container">
-		<a href="#logindummy" class="scroll-link"><img src="media/landing/WTF_flat_2psd.png" id="navlogo"/></a>
-    </div>
-    <div class="nav-middle-container">
-    	<p id="navtitle"></p>
-		    <a href="#aboutHold" class="nav-link">OUR COMPANY & MISSION</a>
-		    <a href="#slideHold" class="nav-link">INDUSTRIES SERVED</a>
-		    <a href="#" class="nav-link">FLOOD RESOURCE CENTER</a>
-		   	<!-- <a href="#vidcontainer" class="nav-link">MISSION</a> -->
-		   	<a href="#map" class="nav-link">CONTACT</a>
-    </div>
-    <div class="nav-right-container">
-    	<a href="#" class="nav-linkright">TIDELAND REPORT</a>
-    	<a href="media/landing/Flood_Determination_Sample_2014.pdf" class="nav-linkright">FLOOD DETERMINATION</a>
-    	<a href="media/landing/PEEK_REALTOR_SAMPLE_PEEK.pdf" class="nav-linkright">PROPERTY PEEK REPORT</a>
-    </div>
-</div>
+	<div id="navcontainer"class="nav-container">
+		<div class="navlogo-container">
+			<a href="" class="scroll-link"><img src="media/landing/WTF_flat_2psd.png" id="navlogo"/></a>
+	    </div>
+	    <div class="nav-middle-container">
+	    	<p id="navtitle"></p>
+			    <a href="#aboutHold" class="nav-link">OUR COMPANY & MISSION</a>
+			    <a href="#slideHold" class="nav-link">INDUSTRIES SERVED</a>
+			    <a href="#" class="nav-link">FLOOD RESOURCE CENTER</a>
+			   	<a href="#map" class="nav-link" style="border-style: none;">CONTACT</a>
+	    </div>
+	    <div class="nav-right-container">
+	    	<a href="#tidelandsSection" class="nav-linkright">TIDELAND REPORT</a>
+	    	<a href="media/landing/Flood_Determination_Sample_2014.pdf" class="nav-linkright">FLOOD DETERMINATION</a>
+	    	<a href="#PPheader" class="nav-linkright">PROPERTY PEEK REPORT</a>
+	    </div>
+	</div>
 </div>
 <a id="logintab" href="#!">LOG IN</a>
-<!--
-<div id="loginTab">
-
-</div>
--->
-
 
 
 <div id="slideHold"></div>
 
 
 <div id="landingdiv">
-	<img src="media/landing/heron_1600X720.jpg" id="landingImage"/>
+	<img src="media/landing/landing_pic00.png" id="landingImage"/>
 	<div class="icon-container">
 		<img src="media/landing/WTGFRC.png" id="floodcenter"/>
 		<img src="media/landing/NJFLOOD_final2015.png" id="njflood"/>
 		<img src="media/landing/NJPFlogo2013BW.png" id="njpf"/>
 	</div>
-	<img src="media/landing/sign_in.png" id="logindummy"/>
-	<div id="njpfFlap" style="background-color: #003366;">	
-	<p id="flaptitle"></p>
-	<p id="flaptext">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+	<div id="loginScrollbox">
+	 	<h3 id="logintitle">Title Agency &amp; Bank Sign-In:</h3>
+	 	<form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+		 	<input  id="username" maxlength="40" name="username" type="text" class="login-input login-icon1" placeholder="Username"/>
+		    <input  id="lastname" maxlength="80" name="last_name" type="text" class="login-input login-icon2" placeholder="Password"/>
+		    <input type="submit" value="Log In" id="loginSubmit"/>
+		    <h3 id="requestacct">Request an Account</h3>
+	    </form>
+	    <div id="loginbottomwrapper">
+	    	<h1 id="logintext1">NJ Property Fax clients (Realtors, Engineers, etc.) <span>click here</span></h1>
+	    	<h1 id="logintext2">Homebuyers &amp; Public <span>click here</span></h1>
+	    </div>
+	</div>
+
+	<!-- <img src="media/landing/sign_in.png" id="logindummy"/> -->
+	<div id="njpfFlap">	
+		<p id="flaptitle"></p>
+		<p id="flaptext1" class="flap-text"></p>
+		<p id="flaptext2" class="flap-text"></p>
+		<p id="flaptext3" class="flap-text"></p>
 	</div>
 </div>
 
@@ -113,12 +124,18 @@
     	<p class="about-text">Our Flood Resource Center is at the core of our mission.  Staffed by highly trained GIS and Floodplain specialists, it provides the market with information, support, training, and resources related to flood issues, regulations, and solutions to real-world challenges faced by the industries and people we serve.</p>
 	</div>
 	<p id="partnerstitle">Our Platform Partners:</p>
-  	<img src="media/landing/PrioritySearchServices.jpg" id="priorityImg"/>
-  	<img src="media/landing/statecapital.png" id="capitalImg"/>
+  	<a href="http://www.statecapital.net/index.php"><img src="media/landing/partnerlogo/partners_StateCapital.png" id="priorityImg" class="partner-image1"/></a>
+  	<a href="http://www.prioritysearchservices.com/"><img src="media/landing/partnerlogo/partners_priority.png" id="capitalImg" class="partner-image1"/></a>
+  	<a href="https://www.elliemae.com/encompass/encompass-overview"><img src="media/landing/partnerlogo/partners_encompass.png" class="partner-image1"/></a>
+  	<a href="http://www.calyxsoftware.com/"><img src="media/landing/partnerlogo/partners_Calyx.png" class="partner-image1"/></a>
+  	<a href="http://ramquest.com/"><img src="media/landing/partnerlogo/partners_ramquest.png" class="partner-image2" style="width: 13%; padding: 2% 3.5%;"/></a>
+  	<a href="http://www.accutitle.com/"><img src="media/landing/partnerlogo/partners_accutitle.png" class="partner-image2"/></a>
+  	<a href="http://www.snapclose.com/"><img src="media/landing/partnerlogo/partners_snapclose.png" class="partner-image2"/></a>
+  	<a href="http://www.iwanttss.com/Solutions/TitleExpress"><img src="media/landing/partnerlogo/partners_TitleExpress.png" class="partner-image2"/></a>
+</div>
   	<!-- <p id="preziTitle">Quick Presentation: About WTG</p>
   	<iframe src="http://prezi.com/embed/vxl4zqnznkt0/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;token=undefined&amp;disabled_features=undefined" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen class="prezi"></iframe>
   	 <iframe src="http://prezi.com/embed/zljqrufy5w3w/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;token=undefined&amp;disabled_features=undefined" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen class="prezi"></iframe> -->
-</div>
 
 
 
@@ -165,19 +182,58 @@
 <div id="floodresourceSection">
 	<img src="media/landing/WTGFRC.png" id="FRseal"/>
 	<p id="floodresourceTitle" class="link">FLOOD RESOURCE CENTER</p>
-<!--	<p style="font-size: 3em; width: 100%; text-align: center; background-color: #003366; color: #ffffff;">FLOOD RESOURCE CENTER</p> -->
 	<p id="videolinkFR" class="sectionlink link">Understanding Flood (Video)</p>
 	<p id="FRlinks" class="sectionlink link" style="color: #ffffff;">Flood Links</p>
-	<p id="calculator" class="sectionlink link" style="color: #ffffff;">Flood Damage Estimator</p>
+	<p id="calculator" class="sectionlink link" style="color: #ffffff; border-style: none;">Flood Damage Estimator</p>
+
+
+<div id="wowslider-container1" class="landingpicFR FR">
+	<div class="ws_images"><ul>
+		<li><img src="data1/images/flood_center_01.png" alt="Name, Title" title="Name, Title" id="wows1_0"/></li>
+		<li><img src="data1/images/flood_center_02.png" alt="Name, Title" title="Name, Title" id="wows1_1"/></li>
+		<li><img src="data1/images/flood_center_03.png" alt="Name, Title" title="Name, Title" id="wows1_2"/></li>
+		<li><img src="data1/images/flood_center_04.png" alt="Name, Title" title="Name, Title" id="wows1_3"/></li>
+		<li><img src="data1/images/flood_center_05.png" alt="Name, Title" title="Name, Title" id="wows1_4"/></li>
+		<li><img src="data1/images/flood_center_06.png" alt="Name, Title" title="Name, Title" id="wows1_5"/></li>
+		<li><img src="data1/images/flood_center_06b.png" alt="Name, Title" title="Name, Title" id="wows1_6"/></li>
+		<li><img src="data1/images/flood_center_07.png" alt="Name, Title" title="Name, Title" id="wows1_7"/></li>
+		<li><img src="data1/images/flood_center_08.png" alt="flood_center_08" title="flood_center_08" id="wows1_8"/></li>
+		<li><img src="data1/images/flood_center_08b.png" alt="Name, Title" title="Name, Title" id="wows1_9"/></li>
+		<li><img src="data1/images/flood_center_09.png" alt="Name, Title" title="Name, Title" id="wows1_10"/></li>
+	</ul></div>
+	<div class="ws_thumbs">
+<div>
+		<a href="#" title="Name, Title"><img src="data1/tooltips/flood_center_01.png" alt="" /></a>
+		<a href="#" title="Name, Title"><img src="data1/tooltips/flood_center_02.png" alt="" /></a>
+		<a href="#" title="Name, Title"><img src="data1/tooltips/flood_center_03.png" alt="" /></a>
+		<a href="#" title="Name, Title"><img src="data1/tooltips/flood_center_04.png" alt="" /></a>
+		<a href="#" title="Name, Title"><img src="data1/tooltips/flood_center_05.png" alt="" /></a>
+		<a href="#" title="Name, Title"><img src="data1/tooltips/flood_center_06.png" alt="" /></a>
+		<a href="#" title="Name, Title"><img src="data1/tooltips/flood_center_06b.png" alt="" /></a>
+		<a href="#" title="Name, Title"><img src="data1/tooltips/flood_center_07.png" alt="" /></a>
+		<a href="#" title="flood_center_08"><img src="data1/tooltips/flood_center_08.png" alt="" /></a>
+		<a href="#" title="Name, Title"><img src="data1/tooltips/flood_center_08b.png" alt="" /></a>
+		<a href="#" title="Name, Title"><img src="data1/tooltips/flood_center_09.png" alt="" /></a>
+	</div>
+</div>
+
+	<div class="ws_shadow"></div>
+	</div>	
+	<script type="text/javascript" src="engine1/wowslider.js"></script>
+	<script type="text/javascript" src="engine1/script.js"></script>
+
+
+
 	<div id="landingcontainerFR" class="FR">
-		<img src="media/FR/FR01.png" id="landingpicFR"/>
+		<!-- <img src="media/FR/FR01.png" id="landingpicFR"/> -->
 		<div id="landingwrapFR">
 			<p id="landingtitleFR">Everything Flood</p>
 			<p id="landingtext1FR" class="landingtextFR">The Flood Resource Center is at the core of our business.  It provides customer support, LOMA application services, engineer and surveyor referrals, report analysis, web-based flood related content, and educational outreach.</p>
 			<p id="landingtext2FR" class="landingtextFR">The Center is staffed by highly trained professionals, including Certified Floodplain Managers, GIS Specialists, Flood & Tideland Analysts, and Training Specialists.</p>
 		</div>
 	</div>
-	<iframe src="https://www.youtube.com/embed/qhrJ1Q6Q0SU?rel=0" id="FRvideo" class="FR tooltip" title="Scroll within this frame to preview the page" frameborder="0" allowfullscreen></iframe>
+	<iframe src="https://www.youtube.com/embed/JCDnh2b0T_Y" frameborder="0" allowfullscreen id="FRvideo"></iframe>
+<!--	<iframe src="https://www.youtube.com/embed/JCDnh2b0T_Y" id="FRvideo" class="FR tooltip" title="Scroll within this frame to preview the page" frameborder="0" allowfullscreen></iframe> -->
 	<div id="floodlinksWrapper" class="FR">
 		<iframe src="" id="linkpreviewer" scrolling="auto" sandbox="allow-same-origin allow-scripts"></iframe>
 		<div id="FRlinkbox">
@@ -204,8 +260,8 @@
 	<img src="media/landing/seal_color.png" id="FDseal"/>
 	<p id="floodDeterminationTitle" class="link">FLOOD DETERMINATION</p>
 	<p id="SFHA" class="sectionlink" style="margin-left: 32%;">Flood Zone Descriptions</p>
-	<a href="" class="sectionlink">FAQs</a>
-	<p id="FDlink" class="sectionlink" style="border: none; margin-right: 25%; margin-bottom: 2%;">Sample Reports</a>
+	<p id="faqlinkFD" class="sectionlink">FAQs</p>
+	<a id="FDlinkdum" class="sectionlink" style="border: none; margin-right: 25%; margin-bottom: 2%;" href="media/WTG_sample_Flood.pdf">Sample Reports</a>
 	<div id="landingcontainerFD" class="FD">
 		<div id="landingtextboxFD">
 			<p id="landingtitleFD">WTG Flood Determination</p>
@@ -223,17 +279,35 @@
 		    	<p id="infoboxtext1FD" class="FDbox"></p>
 		    	<p id="infoboxtext2FD" class="FDbox"></p>
 		    </div>
-		    <p id="FDblock8" class="blocktext">Removing my property from a high-risk zone</p>
-	    	<p id="FDblock1" class="blocktext">Zone X</p>
-	    	<p id="FDblock2" class="blocktext">Zone X (0.2%)</p>
-		    <p id="FDblock3" class="blocktext">Zone AE</p>
-		    <p id="FDblock4" class="blocktext">Zone A</p>
-		    <p id="FDblock5" class="blocktext">Zone AH</p>
-		    <p id="FDblock6" class="blocktext">Zone AO</p>
-		    <p id="FDblock7" class="blocktext">Zone VE</p>
-		    <p id="FDblock9" class="blocktext">Zone D</p>
+		    <p id="FDblock8" class="blocktextblue">Removing my property from a high-risk zone</p>
+	    	<p id="FDblock1" class="zoneXbutton">Zone X</p>
+	    	<a id="FDblock2" class="zoneXbutton">Zone X 0.2%</a>
+		    <p id="FDblock3" class="blocktextorange">Zone AE</p>
+		    <p id="FDblock4" class="blocktextorange">Zone A</p>
+		    <p id="FDblock5" class="blocktextorange">Zone AH</p>
+		    <p id="FDblock6" class="blocktextorange">Zone AO</p>
+		    <p id="FDblock7" class="blocktextorange">Zone VE</p>
+		    <p id="FDblock9" class="blocktextorange">Zone D</p>
 		</div>
 	</div>	
+	<div id="faqcontainerFD" class="FD">
+		<div class="question-wrapper">
+			<h2 class="question-title"></h2>
+			<p class="question-text">Question 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.?</p>
+			<p class="question-text">Question 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.?</p>
+			<p class="question-text">Question 3 ?</p>
+			<p class="question-text">Question 4 ?</p>
+			<p class="question-text">Question 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.?</p>
+			<p class="question-text">Question 6 ?</p>
+			<p class="question-text">Question 7 ?</p>
+			<p class="question-text">Question 8 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.?</p>
+			<p class="question-text">Question 9 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.?</p>
+		</div>
+		<div class="answer-wrapper">
+			<h2 class="answer-title">Info</h2>
+			<p class="answer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+	</div>
 	<div id="docsContainerFD" class="FD">
 		<a href="media/landing/Flood_Determination_Sample_2014.pdf"><div id="docswrapperFD" title="Click to view a downloadable PDF of your sample Flood Determination" class="tooltip">
 			<img src="media/FDdocs1.png" class="doc-img"/>
@@ -251,9 +325,7 @@
 			<p class="FDtext">- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 		</div>
 	</div>
-	<div id="FDfaqcontainer" class="FD">
-		
-	</div>
+	
 </div>
 
 
@@ -265,16 +337,16 @@
 <div id="tidelandsSection">
 	<img src="media/landing/seal_color.png" id="FDseal2"/>
 	<p style="font-size: 3em; width: 100%; padding-top: 3%; text-align: center; background-color: #003366; color: #ffffff;">TIDELANDS REPORT</p>
-	<a href="" class="sectionlink" style="color: #ffffff; margin-left: 35.5%;">Tidelands Act</a>
+	<a href="" class="sectionlink" style="color: #ffffff; margin-left: 35.5%;">Tidelands Report</a>
 	<a href="" class="sectionlink" style="color: #ffffff;">FAQs</a>
-	<a href="" class="sectionlink" style="color: #ffffff; border: none;">Sample Reports</a>
+	<a href="media/WTG_sample_Tideland.pdf" class="sectionlink" style="color: #ffffff; border: none;">Sample Reports</a>
 	<div id="landingcontainerTL" class="TL">
 		<div id="landingwrapTL">
 			<p id="landingtitleTL">Tidelands Report</p>
-			<p id="landingtext1TL" class="landingtextTL">The State of New Jersey holds riparian (tidelands) claim on current and formerly flowed tidal waters. If a property is claimed, the owner must pay an annual ‘rental’ to the State in the form of a lease or license.</p>
+			<p id="landingtext1TL" class="landingtextTL">The State of New Jersey holds riparian (tidelands) claim on current and formerly flowed tidal waters. If a property is claimed, the owner must pay an annual 'rental' to the State in the form of a lease or license.</p>
 			<p id="landingtext2TL" class="landingtextTL">A Tidelands Claim is a cloud on a property owner's title regardless of whether or not that property owner is aware of the claim at the time of purchase.</p>
 			<p id="landingtextTL3" class="landingtextTL">The WTG Tidelands Report includes a search of public records for tideland claims on a property. If the subject property is found to have a claim, a review for grants, licenses and leases (instruments) of any claimed area will be performed. Any instruments found will be included in the Report.</p>
-			<p id="landingtextTL4" class="landingtextTL">The WTG Tidelands Report is insured. The report includes ‘visual verification’ map overlays including:</p>
+			<p id="landingtextTL4" class="landingtextTL">The WTG Tidelands Report is insured. The report includes 'visual verification' map overlays including:</p>
 			<ul>
 				<li>Property Boundaries</li>
 				<li>Aerial/Satellite Imagery</li>
@@ -288,13 +360,12 @@
 
 <div id="propertyPeakSection">
 	<p id="PPheader">PROPERTY PEEK REPORT</p>
-	<img src="media/landing/seal_color.png" id="FDseal3"/>
-	<a href="" class="sectionlink" style="color: #003366; margin-left: 35.5%;">PROPERTY PEEK REPORT</a>
+	<a href="" class="sectionlink" style="color: #003366;margin-left: 35.5%;">PROPERTY PEEK REPORT</a>
 	<a href="" class="sectionlink" style="color: #003366;">FAQs</a>
-	<a href="" class="sectionlink" style="color: #003366; border: none; margin-right: 20%;">Sample Reports</a>
+	<a href="media/PEEK_REALTOR_SAMPLE_PEEK.pdf" class="sectionlink" style="color: #003366; border: none; margin-right: 20%;">Sample Reports</a>
 	<div id="landingcontainerPP" class="PP">
 		<div id="landingwrapPP">
-			<p id="landingtitlePP">Tidelands Report</p>
+			<p id="landingtitlePP">Property Peek Report</p>
 			<p id="landingtext1PP" class="landingtextTL">The Property PEEK Report is a comprehensive Property Report that provides useful data and GIS maps for Realtors, engineers, surveys, banks, builders, title agents, attorneys, mortgage lenders, and other professionals.</p>
 			<p id="landingtext2pp" class="landingtextTL">This customizable report includes a 20-year tax assessment history, taxmap with satellite imagery, zoning map, historical aerials (going back to 1930), Category-1 water (with buffers), wetlands, preserved & open spaces, DEP-reported contaminated sites, farmland preserved and open spaces, CAFRA, Highlands management, Pineland, management, topo, soils data, and sewer service areas.</p>
 			<p id="landingtext3PP" class="landingtextTL">This report is not insured.  It is provided as a 'heads-up' for potential issues related to a property. Some of those issues require additional analysis beyond the scope of the report (i.e. for a complete wetlands analysis, an engineer must walk the property to survey and collect data).</p>
