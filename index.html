@@ -9,9 +9,9 @@
 <link rel="stylesheet" type="text/css" href="resources/tooltipster-master/css/tooltipster.css" />
 <link rel="stylesheet" href="resources/Buttons-master/css/buttons.css">
 <link rel="stylesheet" type="text/css" href="resources/gmaps-master/examples/examples.css" />
-<link rel="stylesheet" href="css/main.css">
-
 	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<link rel="stylesheet" href="css/main.css"/>
+
 	<script type="text/javascript" src="engine1/jquery.js"></script>
 
 <script type="text/javascript" src="resources/ScrollMagic/js/_dependent/jquery.min.js"></script>
@@ -63,117 +63,115 @@
 <div id="navwrapper">
 	<div id="navcontainer"class="nav-container">
 		<div class="navlogo-container">
-			<a href="" class="scroll-link"><img src="media/landing/WTF_flat_2psd.png" id="navlogo"/></a>
+			<a href="#floodcenter" class="scroll-link"><img src="media/landing/WTF_flat_2psd.png" id="navlogo"/></a>
 	    </div>
 	    <div class="nav-middle-container">
-	    	<p id="navtitle"></p>
+	    	<h1 id="navtitle"></h1>
 			    <a href="#aboutHold" class="nav-link">OUR COMPANY & MISSION</a>
 			    <a href="#slideHold" class="nav-link">INDUSTRIES SERVED</a>
-			    <a href="#" class="nav-link">FLOOD RESOURCE CENTER</a>
+			    <a href="#floodresourceSection" class="nav-link">FLOOD RESOURCE CENTER</a>
 			   	<a href="#map" class="nav-link" style="border-style: none;">CONTACT</a>
 	    </div>
 	    <div class="nav-right-container">
-	    	<a href="#tidelandsSection" class="nav-linkright">TIDELAND REPORT</a>
-	    	<a href="media/landing/Flood_Determination_Sample_2014.pdf" class="nav-linkright">FLOOD DETERMINATION</a>
-	    	<a href="#PPheader" class="nav-linkright">PROPERTY PEEK REPORT</a>
+	    	<a href="#tidelandsSection" class="nav-linkright scroll-link">TIDELAND REPORT</a>
+	    	<a href="#propertyPeekSection" class="nav-linkright scroll-link">FLOOD DETERMINATION</a>
+	    	<a href="#PPheader" class="nav-linkright scroll-link">PROPERTY PEEK REPORT</a>
 	    </div>
 	</div>
 </div>
-<a id="logintab" href="#!">LOG IN</a>
+<p id="logintab" class="btncolor link">LOG IN</p>
 
 
 <div id="slideHold"></div>
 
-
+<div id="loginScrollbox">
+	 	<h3 id="logintitle">Title Agency &amp; Bank Sign-In</h3>
+	 	<div id="loginform"><form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+		 	<input  id="username" maxlength="40" name="username" type="text" class="login-input login-icon1" placeholder="Username"/>
+		    <input  id="lastname" maxlength="80" name="last_name" type="text" class="login-input login-icon2" placeholder="Password"/>
+		    <h3 id="requestacct">Request an Account</h3>
+		    <input type="submit" value="Log In" id="loginSubmit"/>
+	    </form></div>
+	    <div id="loginbottomwrapper">
+	    	<p id="logintext1">NJ Property Fax clients <span>click here</span></p>
+	    	<p id="logintext2">Homebuyers &amp; Public <span>click here</span></p>
+	    </div>
+	</div>
 <div id="landingdiv">
 	<img src="media/landing/landing_pic00.png" id="landingImage"/>
 	<div class="icon-container">
 		<img src="media/landing/WTGFRC.png" id="floodcenter"/>
-		<img src="media/landing/NJFLOOD_final2015.png" id="njflood"/>
+		<img src="media/landing/NJFlood_2015.png" id="njflood"/>
 		<img src="media/landing/NJPFlogo2013BW.png" id="njpf"/>
 	</div>
-	<div id="loginScrollbox">
-	 	<h3 id="logintitle">Title Agency &amp; Bank Sign-In:</h3>
-	 	<form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
-		 	<input  id="username" maxlength="40" name="username" type="text" class="login-input login-icon1" placeholder="Username"/>
-		    <input  id="lastname" maxlength="80" name="last_name" type="text" class="login-input login-icon2" placeholder="Password"/>
-		    <input type="submit" value="Log In" id="loginSubmit"/>
-		    <h3 id="requestacct">Request an Account</h3>
-	    </form>
-	    <div id="loginbottomwrapper">
-	    	<h1 id="logintext1">NJ Property Fax clients (Realtors, Engineers, etc.) <span>click here</span></h1>
-	    	<h1 id="logintext2">Homebuyers &amp; Public <span>click here</span></h1>
-	    </div>
-	</div>
-
-	<!-- <img src="media/landing/sign_in.png" id="logindummy"/> -->
 	<div id="njpfFlap">	
-		<p id="flaptitle"></p>
+		<h2 id="flaptitle"></h2>
 		<p id="flaptext1" class="flap-text"></p>
 		<p id="flaptext2" class="flap-text"></p>
 		<p id="flaptext3" class="flap-text"></p>
 	</div>
+	
 </div>
 
 <div id="aboutsection">
+	<h1 id="aboutTitle">Our Company &amp; Mission</h1>
 	<img src="media/landing/Company_Mission.png" id="aboutpic1"/>
 	<div id="aboutHold" class="aboutdiv">
-		<p id="aboutTitle">Our Company &amp; Mission</p>
-		<p class="about-text">Western Technologies Group LLC is the premiere provider of <a href="#floodDeterminationSection" class="scroll-link">Flood Determinations</a>, <a href="#tidelandsSection" class="scroll-link">Tidelands Reports</a>, and <a href="#propertyPeakSection" class="scroll-link">Property Peak Report</a>.  We serve various industries built around the real estate transaction - from Title Agencies and Mortgage Lenders to Realtors, Appraisers, Engineers, Attorneys, and Builders.</p>
+		<p class="about-text">Western Technologies Group LLC is the premiere provider of <a href="#floodDeterminationSection" class="scroll-link">Flood Determinations</a>, <a href="#tidelandsSection" class="scroll-link">Tidelands Reports</a>, and <a href="#propertyPeekSection" class="scroll-link">Property Peak Report</a>.  We serve various industries built around the real estate transaction - from Title Agencies and Mortgage Lenders to Realtors, Appraisers, Engineers, Attorneys, and Builders.</p>
 		<p class="about-text">Our company <i>mission</i> is built on integrity, accuracy, and innovation.  INTEGRITY of our people, processes, and data; ACCURACY in our results; and INNOVATION in our quest to anticipate the needs of our clients and bring solutions to the fast-changing world of real estate.</p>
-    	<p class="about-text">Our Flood Resource Center is at the core of our mission.  Staffed by highly trained GIS and Floodplain specialists, it provides the market with information, support, training, and resources related to flood issues, regulations, and solutions to real-world challenges faced by the industries and people we serve.</p>
+		<a href="management.html" class="about-text">Meet our Management Staff</a>
 	</div>
-	<p id="partnerstitle">Our Platform Partners:</p>
+	<p class="about-text2">Our Flood Resource Center is at the core of our mission.  Staffed by highly trained GIS and Floodplain specialists, it provides the market with information, support, training, and resources related to flood issues, regulations, and solutions to real-world challenges faced by the industries and people we serve.</p>
+	<h2 id="partnerstitle">Our Platform Partners:</h2>
   	<a href="http://www.statecapital.net/index.php"><img src="media/landing/partnerlogo/partners_StateCapital.png" id="priorityImg" class="partner-image1"/></a>
   	<a href="http://www.prioritysearchservices.com/"><img src="media/landing/partnerlogo/partners_priority.png" id="capitalImg" class="partner-image1"/></a>
   	<a href="https://www.elliemae.com/encompass/encompass-overview"><img src="media/landing/partnerlogo/partners_encompass.png" class="partner-image1"/></a>
   	<a href="http://www.calyxsoftware.com/"><img src="media/landing/partnerlogo/partners_Calyx.png" class="partner-image1"/></a>
-  	<a href="http://ramquest.com/"><img src="media/landing/partnerlogo/partners_ramquest.png" class="partner-image2" style="width: 13%; padding: 2% 3.5%;"/></a>
-  	<a href="http://www.accutitle.com/"><img src="media/landing/partnerlogo/partners_accutitle.png" class="partner-image2"/></a>
-  	<a href="http://www.snapclose.com/"><img src="media/landing/partnerlogo/partners_snapclose.png" class="partner-image2"/></a>
-  	<a href="http://www.iwanttss.com/Solutions/TitleExpress"><img src="media/landing/partnerlogo/partners_TitleExpress.png" class="partner-image2"/></a>
+  	<a href="http://ramquest.com/"><img src="media/landing/partnerlogo/partners_ramquest.png" id="ramquest" class="partner-image2"/></a>
+  	<a href="http://www.accutitle.com/"><img src="media/landing/partnerlogo/partners_accutitle.png" id="accutitle" class="partner-image2"/></a>
+  	<a href="http://www.snapclose.com/"><img src="media/landing/partnerlogo/partners_snapclose.png" id="snapclose" class="partner-image2"/></a>
+  	<a href="http://www.iwanttss.com/Solutions/TitleExpress"><img src="media/landing/partnerlogo/partners_TitleExpress.png" id="express" class="partner-image2"/></a>
 </div>
-  	<!-- <p id="preziTitle">Quick Presentation: About WTG</p>
-  	<iframe src="http://prezi.com/embed/vxl4zqnznkt0/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;token=undefined&amp;disabled_features=undefined" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen class="prezi"></iframe>
-  	 <iframe src="http://prezi.com/embed/zljqrufy5w3w/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;token=undefined&amp;disabled_features=undefined" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen class="prezi"></iframe> -->
-
 
 
 <div id="slideContainer">
-	<p id="slideTitle">INDUSTRIES WE SERVE</p>
+	<h1 id="slideTitle">INDUSTRIES WE SERVE</h1>
 	<div id="buttonContainer">
-	<a href="#slideHold" id="prevIndustry" class="scroll-link button button-rounded">Previous</a>
-	<span class="button-dropdown" data-buttons="dropdown">
-		<a class="scroll-link button button-rounded">SELECT AN INDUSTRIES</a>
-	  	<ul>
-			<li><a href="#slideHold" id="industry1" class="scroll-link">Title Agencies</a></li>
-			<li><a href="#slideHold" id="industry2">Real Estate Professionals</a></li>
-			<li><a href="#slideHold" id="industry3">Banks & Mortgage Lenders</a></li>
-			<li><a href="#slideHold" id="industry4">Engineers & Surveyors</a></li>
-			<li><a href="#slideHold" id="industry5">Appraisers</a></li>
-			<li><a href="#slideHold" id="industry6">Attorneys</a></li>
-			<li><a href="#slideHold" id="industry7">Home Inspectors</a></li>
-			<li><a href="#slideHold" id="industry8">Municipalities & Government</a></li>
-	  </ul>
-	</span>
-	<a href="#slideHold" id="nextIndustry" class="scroll-link button button-rounded">Next</a>
+		<a href="#slideHold" id="prevIndustry" class="scroll-link button button-rounded btncolor">Previous</a>
+		<span class="button-dropdown" data-buttons="dropdown">
+			<a id="selectIndustry" class="button button-rounded btncolor">Select an Industry</a>
+		  	<ul>
+				<li><a href="#slideHold" id="industry1" class="scroll-link">Title Agencies</a></li>
+				<li><a href="#slideHold" id="industry2" class="scroll-link">Real Estate Professionals</a></li>
+				<li><a href="#slideHold" id="industry3" class="scroll-link">Banks & Mortgage Lenders</a></li>
+				<li><a href="#slideHold" id="industry4" class="scroll-link">Engineers & Surveyors</a></li>
+				<li><a href="#slideHold" id="industry5" class="scroll-link">Appraisers</a></li>
+				<li><a href="#slideHold" id="industry6" class="scroll-link">Attorneys</a></li>
+				<li><a href="#slideHold" id="industry7" class="scroll-link">Home Inspectors</a></li>
+				<li><a href="#slideHold" id="industry8" class="scroll-link">Municipalities & Government</a></li>
+				<li><a href="#slideHold" id="industry9" class="scroll-link">Builders &amp; Construction</a></li>
+		  	</ul>
+		</span>
+		<a href="#slideHold" id="nextIndustry" class="scroll-link button button-rounded btncolor">Next</a>
 	</div>
 	<div id="slideA">
 		<img src="" id="leftPicA"/>
 		<div id="rightsideA">
-			<p id="industryTitleA"></p>
+			<h2 id="industryTitleA"></h2>
 			<p id="industryTextA1" class="industryText"></p>
 			<p id="industryTextA2" class="industryText"></p>
 			<p id="industryTextA3" class="industryText"></p>
+			<a class="learn-more" href="#">Learn More</a>
 		</div>
 	</div>
 	<div id="slideB">
 		<img src="" id="leftPicB"/>
 		<div id="rightsideB">
-			<p id="industryTitleB"></p>
+			<h2 id="industryTitleB"></h2>
 			<p id="industryTextB1" class="industryText"></p>
 			<p id="industryTextB2" class="industryText"></p>
 			<p id="industryTextB3" class="industryText"></p>
+			<a class="learn-more" href="#">Learn More</a>
 		</div>
 	</div>
 	
@@ -181,62 +179,57 @@
 
 <div id="floodresourceSection">
 	<img src="media/landing/WTGFRC.png" id="FRseal"/>
-	<p id="floodresourceTitle" class="link">FLOOD RESOURCE CENTER</p>
+	<h1 id="floodresourceTitle" class="link">FLOOD RESOURCE CENTER</h1>
+	<p id="landinglinkFR" class="sectionlink">Flood Resource Center</a>
 	<p id="videolinkFR" class="sectionlink link">Understanding Flood (Video)</p>
 	<p id="FRlinks" class="sectionlink link" style="color: #ffffff;">Flood Links</p>
-	<p id="calculator" class="sectionlink link" style="color: #ffffff; border-style: none;">Flood Damage Estimator</p>
-
-
-<div id="wowslider-container1" class="landingpicFR FR">
-	<div class="ws_images"><ul>
-		<li><img src="data1/images/flood_center_01.png" alt="Name, Title" title="Name, Title" id="wows1_0"/></li>
-		<li><img src="data1/images/flood_center_02.png" alt="Name, Title" title="Name, Title" id="wows1_1"/></li>
-		<li><img src="data1/images/flood_center_03.png" alt="Name, Title" title="Name, Title" id="wows1_2"/></li>
-		<li><img src="data1/images/flood_center_04.png" alt="Name, Title" title="Name, Title" id="wows1_3"/></li>
-		<li><img src="data1/images/flood_center_05.png" alt="Name, Title" title="Name, Title" id="wows1_4"/></li>
-		<li><img src="data1/images/flood_center_06.png" alt="Name, Title" title="Name, Title" id="wows1_5"/></li>
-		<li><img src="data1/images/flood_center_06b.png" alt="Name, Title" title="Name, Title" id="wows1_6"/></li>
-		<li><img src="data1/images/flood_center_07.png" alt="Name, Title" title="Name, Title" id="wows1_7"/></li>
-		<li><img src="data1/images/flood_center_08.png" alt="flood_center_08" title="flood_center_08" id="wows1_8"/></li>
-		<li><img src="data1/images/flood_center_08b.png" alt="Name, Title" title="Name, Title" id="wows1_9"/></li>
-		<li><img src="data1/images/flood_center_09.png" alt="Name, Title" title="Name, Title" id="wows1_10"/></li>
-	</ul></div>
-	<div class="ws_thumbs">
-<div>
-		<a href="#" title="Name, Title"><img src="data1/tooltips/flood_center_01.png" alt="" /></a>
-		<a href="#" title="Name, Title"><img src="data1/tooltips/flood_center_02.png" alt="" /></a>
-		<a href="#" title="Name, Title"><img src="data1/tooltips/flood_center_03.png" alt="" /></a>
-		<a href="#" title="Name, Title"><img src="data1/tooltips/flood_center_04.png" alt="" /></a>
-		<a href="#" title="Name, Title"><img src="data1/tooltips/flood_center_05.png" alt="" /></a>
-		<a href="#" title="Name, Title"><img src="data1/tooltips/flood_center_06.png" alt="" /></a>
-		<a href="#" title="Name, Title"><img src="data1/tooltips/flood_center_06b.png" alt="" /></a>
-		<a href="#" title="Name, Title"><img src="data1/tooltips/flood_center_07.png" alt="" /></a>
-		<a href="#" title="flood_center_08"><img src="data1/tooltips/flood_center_08.png" alt="" /></a>
-		<a href="#" title="Name, Title"><img src="data1/tooltips/flood_center_08b.png" alt="" /></a>
-		<a href="#" title="Name, Title"><img src="data1/tooltips/flood_center_09.png" alt="" /></a>
-	</div>
-</div>
-
-	<div class="ws_shadow"></div>
-	</div>	
-	<script type="text/javascript" src="engine1/wowslider.js"></script>
-	<script type="text/javascript" src="engine1/script.js"></script>
-
-
-
+	<p id="calculator" class="sectionlink link">Flood Damage Estimator</p>
 	<div id="landingcontainerFR" class="FR">
-		<!-- <img src="media/FR/FR01.png" id="landingpicFR"/> -->
+
+	<div id="wowslider-container1" class="landingpicFR">
+		<div class="ws_images" style="max-height: 2000px;"><ul>
+			<li><img src="data1/images/flood_resource_team.png" alt="Flood Resource Team" title="Flood Resource Team" id="wows1_0"/></li>
+			<li><img src="data1/images/adam_yesaitis_cfm__manager.png" alt="Adam Yesaitis, CFM, General Manager" title="Adam Yesaitis, CFM, General Manager" id="wows1_1"/></li>
+			<li><img src="data1/images/alex_sliwecki_cfm.png" alt="Alex Sliwecki, CFM" title="Alex Sliwecki, CFM" id="wows1_2"/></li>
+			<li><img src="data1/images/allison_rusignuolo.png" alt="Allison Rusignuolo, Accounts & Customer Service " title="Allison Rusignuolo, Accounts & Customer Service " id="wows1_3"/></li>
+			<li><img src="data1/images/andrew_yesaitis_cfm__office_manager.png" alt="Andrew Yesaitis, CFM, Office Manager" title="Andrew Yesaitis, CFM, Office Manager" id="wows1_4"/></li>
+			<li><img src="data1/images/anthony_trofimow.png" alt="Anthony_Trofimow" title="Anthony_Trofimow" id="wows1_5"/></li>
+			<li><img src="data1/images/jerry_jones_president.png" alt="Jerry Jones, President" title="Jerry Jones, President" id="wows1_6"/></li>
+			<li><img src="data1/images/john_lilly.png" alt="John Lilly, CFM, Certified Floodplain Manager" title="John Lilly, CFM, Certified Floodplain Manager" id="wows1_7"/></li>
+			<li><img src="data1/images/karen_zunin.png" alt="Karen Zunin, Customer Service" title="Karen Zunin, Customer Service" id="wows1_8"/></li>
+			<li><img src="data1/images/katie_allard.png" alt="Katie Allard" title="Katie Allard" id="wows1_9"/></li>
+		</ul></div>
+		<div class="ws_thumbs">
+		<div>
+		<a href="#" title="Flood Resource Team"><img src="data1/tooltips/flood_resource_team.png" alt="" /></a>
+		<a href="#" title="Adam Yesaitis, CFM, General Manager"><img src="data1/tooltips/adam_yesaitis_cfm__manager.png" alt="" /></a>
+		<a href="#" title="Alex Sliwecki, CFM"><img src="data1/tooltips/alex_sliwecki_cfm.png" alt="" /></a>
+		<a href="#" title="Allison Rusignuolo, Accounts & Customer Service "><img src="data1/tooltips/allison_rusignuolo.png" alt="" /></a>
+		<a href="#" title="Andrew Yesaitis, CFM, Office Manager"><img src="data1/tooltips/andrew_yesaitis_cfm__office_manager.png" alt="" /></a>
+		<a href="#" title="Anthony_Trofimow"><img src="data1/tooltips/anthony_trofimow.png" alt="" /></a>
+		<a href="#" title="Jerry Jones, President"><img src="data1/tooltips/jerry_jones_president.png" alt="" /></a>
+		<a href="#" title="John Lilly, CFM, Certified Floodplain Manager"><img src="data1/tooltips/john_lilly.png" alt="" /></a>
+		<a href="#" title="Karen Zunin, Customer Service"><img src="data1/tooltips/karen_zunin.png" alt="" /></a>
+		<a href="#" title="Katie Allard"><img src="data1/tooltips/katie_allard.png" alt="" /></a>
+		</div>
+	</div>
+		<div class="ws_shadow"></div>
+		</div>	
+		<script type="text/javascript" src="engine1/wowslider.js"></script>
+		<script type="text/javascript" src="engine1/script.js"></script>
+
 		<div id="landingwrapFR">
-			<p id="landingtitleFR">Everything Flood</p>
+			<h2 id="landingtitleFR">Everything Flood</h2>
 			<p id="landingtext1FR" class="landingtextFR">The Flood Resource Center is at the core of our business.  It provides customer support, LOMA application services, engineer and surveyor referrals, report analysis, web-based flood related content, and educational outreach.</p>
 			<p id="landingtext2FR" class="landingtextFR">The Center is staffed by highly trained professionals, including Certified Floodplain Managers, GIS Specialists, Flood & Tideland Analysts, and Training Specialists.</p>
 		</div>
 	</div>
-	<iframe src="https://www.youtube.com/embed/JCDnh2b0T_Y" frameborder="0" allowfullscreen id="FRvideo"></iframe>
-<!--	<iframe src="https://www.youtube.com/embed/JCDnh2b0T_Y" id="FRvideo" class="FR tooltip" title="Scroll within this frame to preview the page" frameborder="0" allowfullscreen></iframe> -->
+	<iframe src="https://www.youtube.com/embed/JCDnh2b0T_Y" frameborder="0" allowfullscreen id="FRvideo" class="FR"></iframe>
 	<div id="floodlinksWrapper" class="FR">
 		<iframe src="" id="linkpreviewer" scrolling="auto" sandbox="allow-same-origin allow-scripts"></iframe>
 		<div id="FRlinkbox">
+			<h2 id="FRtitle">Links &amp; Resources</h2>
+			<h4 id="FRsubtitle">Hover or click a link to preview each webpage.</h4>
 	<!--	<a href="http://www.nhc.noaa.gov/" id="FRlink0" class="FRlink-class">National Hurricane Center</a> -->
 			<a href="https://www.floodsmart.gov/floodsmart/pages/flooding_flood_risks/map_update_schedule.jsp" id="FRlink1" class="FRlink-class">Flood Map Update Schedule (FEMA)</a>
 			<a href="https://www.floodsmart.gov/floodsmart/pages/commercial_coverage/cc_overview.jsp" id="FRlink2" class="FRlink-class">Commercial Flood Coverage (FEMA)</a>
@@ -248,7 +241,7 @@
 		</div>
 	</div>
 	<div id="calcWrapper" class="FR">
-		<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" class="flash-tool" title="CostOfFloodingTool"><param name="movie" value="https://www.floodsmart.gov/floodsmart/flash/costofflooding/CostOfFlooding.swf" /><param name="quality" value="high" /><param name="wmode" value="opaque" /><param name="allowscriptaccess" value="always" /><param name="bgcolor" value="#000000" /><param name="flashvars" value="embedded=true&env=https://www.floodsmart.gov" /><embed src="https://www.floodsmart.gov/floodsmart/flash/costofflooding/CostOfFlooding.swf" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" class="flash-tool" bgcolor="#000000" flashvars="embedded=true&env=https://www.floodsmart.gov" allowscriptaccess="always" id="floodtool"></embed></object>
+		<object volume="0" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" class="flash-tool" title="CostOfFloodingTool"><param name="movie" value="https://www.floodsmart.gov/floodsmart/flash/costofflooding/CostOfFlooding.swf" /><param name="quality" value="high" /><param name="wmode" value="opaque" /><param name="allowscriptaccess" value="always" /><param name="bgcolor" value="#000000" /><param name="flashvars" value="embedded=true&env=https://www.floodsmart.gov" /><embed src="https://www.floodsmart.gov/floodsmart/flash/costofflooding/CostOfFlooding.swf" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" class="flash-tool" bgcolor="#000000" flashvars="embedded=true&env=https://www.floodsmart.gov" allowscriptaccess="always" id="floodtool" volume="0"></embed></object>
 	</div>
 
 </div>
@@ -258,28 +251,28 @@
 
 <div id="floodDeterminationSection">
 	<img src="media/landing/seal_color.png" id="FDseal"/>
-	<p id="floodDeterminationTitle" class="link">FLOOD DETERMINATION</p>
-	<p id="SFHA" class="sectionlink" style="margin-left: 32%;">Flood Zone Descriptions</p>
+	<h1 id="floodDeterminationTitle" class="link">FLOOD DETERMINATION</h1>
+	<p id="landinglinkFD" class="sectionlink">Flood Determination</a>
+	<p id="SFHA" class="sectionlink">Flood Zone Descriptions</p>
 	<p id="faqlinkFD" class="sectionlink">FAQs</p>
-	<a id="FDlinkdum" class="sectionlink" style="border: none; margin-right: 25%; margin-bottom: 2%;" href="media/WTG_sample_Flood.pdf">Sample Reports</a>
+	<a class="sectionlink report" href="media/WTG_sample_Flood.pdf">Sample Reports</a>
 	<div id="landingcontainerFD" class="FD">
 		<div id="landingtextboxFD">
-			<p id="landingtitleFD">WTG Flood Determination</p>
+			<h2 id="landingtitleFD">WTG Flood Determination</h2>
 			<p id="landingtextFD1" class="LTFD">The WTG Flood Determination established the true flood status for a property, based on the FEMA/NFIP rule of whether a high-risk flood zone encroaches (touches) an inhabited structure.  A key part of the report is the analysis done by a trained flood specialists based satellite imagery, FEMA DFIRM maps, and other data.</p>
 			<p id="landingtextFD2" class="LTFD">The WTG Flood Determination is a superior report - setting the standard for 'best practices' in the industry.   The high quality of this report is based on important key factors, including (i) the report is insured for $2,000,000, we stand behind our work (ii) our proprietary geocoding used to identify the parcel, (iii) 'Visual Verification' allowing the client to see the imagery used in the analysis, and (iv) inclusion of preliminary and work maps (when available), giving the client a 'heads-up' to possible future changes in their status</p>
 			<p id="landingtextFD3" class="LTFD">To ensure you have an authentic WTG Flood Determination, look for the CERTIFIED/INSURED seal in the upper left corner.</p>
 		</div>
-		<img src="media/landing/Flood_Determination_landing.png" id="landingImgFD"/>
+		<img src="media/landing/Flood-Determination-landing.png" id="landingImgFD"/>
 	</div>
 	<div id="blockcontainerFD" class="FD">
 	    <div class="info-boxFD">
-	    	<!-- <img src="" id="infoboxpic"/> -->
-	    	<div id="" style="height: 54%; min-height: 54%;">
-		    	<p id="infoboxtitleFD" class="FDbox"></p>
+	    	<div id="infoboxwrapperFD">
+		    	<h2 id="infoboxtitleFD" class="FDbox"></h2>
 		    	<p id="infoboxtext1FD" class="FDbox"></p>
 		    	<p id="infoboxtext2FD" class="FDbox"></p>
 		    </div>
-		    <p id="FDblock8" class="blocktextblue">Removing my property from a high-risk zone</p>
+		    <p id="FDblock0" class="blocktextblue">Removing my property from a high-risk zone</p>
 	    	<p id="FDblock1" class="zoneXbutton">Zone X</p>
 	    	<a id="FDblock2" class="zoneXbutton">Zone X 0.2%</a>
 		    <p id="FDblock3" class="blocktextorange">Zone AE</p>
@@ -291,6 +284,92 @@
 		</div>
 	</div>	
 	<div id="faqcontainerFD" class="FD">
+		<div class="question-wrapper">
+			<h2 class="question-title"></h2>
+			<p id="FDQ1" class="question-text">Question 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.?</p>
+			<p id="FDQ2" class="question-text">Question 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.?</p>
+			<p id="FDQ3" class="question-text">Question 3 ?</p>
+			<p id="FDQ4" class="question-text">Question 4 ?</p>
+			<p id="FDQ5" class="question-text">Question 5</p>
+			<p id="FDQ6" class="question-text">Question 6 ?</p>
+			<p id="FDQ7" class="question-text">Question 7 ?</p>
+			<p id="FDQ8" class="question-text">Question 8 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.?</p>
+			<p id="FDQ9" class="question-text">Question 9 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.?</p>
+		</div>
+		<div class="answer-wrapper">
+			<h2 class="answer-title">Info</h2>
+			<p id="FDA1" class="answer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<div id="tidelandsSection">
+	<img src="media/landing/seal_color.png" id="FDseal2"/>
+	<h1 id="tidelandsTitle">TIDELANDS REPORT</h1>
+	<p id="landinglinkTL" class="sectionlink">Tidelands Report</a>
+	<p id="faqlinkTL" class="sectionlink" style="color: #ffffff;">FAQs</p>
+	<a href="media/WTG_sample_Tideland.pdf" class="sectionlink" style="color: #ffffff; border: none;">Sample Reports</a>
+	<div id="landingcontainerTL" class="TL">
+		<div id="landingwrapTL">
+			<h2 id="landingtitleTL">Tidelands Report</h2>
+			<p id="landingtext1TL" class="landingtextTL">The State of New Jersey holds riparian (tidelands) claim on current and formerly flowed tidal waters. If a property is claimed, the owner must pay an annual 'rental' to the State in the form of a lease or license.</p>
+			<p id="landingtext2TL" class="landingtextTL">A Tidelands Claim is a cloud on a property owner's title regardless of whether or not that property owner is aware of the claim at the time of purchase.</p>
+			<p id="landingtextTL3" class="landingtextTL">The WTG Tidelands Report includes a search of public records for tideland claims on a property. If the subject property is found to have a claim, a review for grants, licenses and leases (instruments) of any claimed area will be performed. Any instruments found will be included in the Report.</p>
+			<p id="landingtextTL4" class="landingtextTL">The WTG Tidelands Report is insured. The report includes 'visual verification' map overlays including:</p>
+			<ul>
+				<li>Property Boundaries</li>
+				<li>Aerial/Satellite Imagery</li>
+				<li>Tideland Boundaries</li>
+				<li>Instruments of Claim</li>
+			</ul>
+		</div>
+		<img src="media/tidelands_doc_image.png" id="landingpicTL"/>
+	</div>
+	<div id="faqcontainerTL" class="TL">
+		<div class="question-wrapper">
+			<h2 class="question-title"></h2>
+			<p id="TLQ1" class="question-text">Question 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.?</p>
+			<p id="TLQ2" class="question-text">Question 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.?</p>
+			<p id="TLQ3" class="question-text">Question 3 ?</p>
+			<p id="TLQ4" class="question-text">Question 4 ?</p>
+			<p id="TLQ5" class="question-text">Question 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.?</p>
+			<p id="TLQ6" class="question-text">Question 6 ?</p>
+			<p id="TLQ7" class="question-text">Question 7 ?</p>
+			<p id="TLQ8" class="question-text">Question 8 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.?</p>
+			<p id="TLQ9" class="question-text">Question 9 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.?</p>
+		</div>
+		<div class="answer-wrapper">
+			<h2 id="TLA1" class="answer-title">Info</h2>
+			<p id="TLQ2" class="answer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<div id="propertyPeekSection">
+	<h1 id="PPheader">PROPERTY PEEK REPORT</h1>
+	<p id="landinglinkPP" class="sectionlink">PROPERTY PEEK REPORT</a>
+	<p id="faqlinkPP" class="sectionlink">FAQs</p>
+	<a href="media/PEEK_REALTOR_SAMPLE_PEEK.pdf" class="sectionlink" style="color: #003366; border: none;">Sample Reports</a>
+	<div id="landingcontainerPP" class="PP">
+		<div id="landingwrapPP">
+			<h2 id="landingtitlePP">Property Peek Report</h2>
+			<p id="landingtext1PP" class="landingtextTL">The Property PEEK Report is a comprehensive Property Report that provides useful data and GIS maps for Realtors, engineers, surveys, banks, builders, title agents, attorneys, mortgage lenders, and other professionals.</p>
+			<p id="landingtext2pp" class="landingtextTL">This customizable report includes a 20-year tax assessment history, taxmap with satellite imagery, zoning map, historical aerials (going back to 1930), Category-1 water (with buffers), wetlands, preserved &amp; open spaces, DEP-reported contaminated sites, farmland preserved and open spaces, CAFRA, Highlands management, Pineland, management, topo, soils data, and sewer service areas.</p>
+			<p id="landingtext3PP" class="landingtextTL">This report is not insured.  It is provided as a 'heads-up' for potential issues related to a property. Some of those issues require additional analysis beyond the scope of the report (i.e. for a complete wetlands analysis, an engineer must walk the property to survey and collect data).</p>
+		</div>
+		<img src="media/landing/Property_Peek_landing.png" id="landingpicPP"/>
+	</div>
+	<div id="faqcontainerPP" class="PP">
 		<div class="question-wrapper">
 			<h2 class="question-title"></h2>
 			<p class="question-text">Question 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.?</p>
@@ -308,151 +387,47 @@
 			<p class="answer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 		</div>
 	</div>
-	<div id="docsContainerFD" class="FD">
-		<a href="media/landing/Flood_Determination_Sample_2014.pdf"><div id="docswrapperFD" title="Click to view a downloadable PDF of your sample Flood Determination" class="tooltip">
-			<img src="media/FDdocs1.png" class="doc-img"/>
-			<img src="media/FDdocs2.png" class="doc-img"/>
-			<img src="media/FDdocs3.png" class="doc-img"/>
-			<img src="media/FDdocs4.png" class="doc-img"/>
-			<img src="media/FDdocs5.png" class="doc-img"/>
-		</div></a>
-		<div id="FDtextwrapper">
-			<p id="FDtitle">Your Flood Determination includes:</p>
-			<p class="FDtext">- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			<p class="FDtext">- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			<p class="FDtext">- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			<p class="FDtext">- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			<p class="FDtext">- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-		</div>
-	</div>
-	
 </div>
 
 
 
 
 
-
-
-<div id="tidelandsSection">
-	<img src="media/landing/seal_color.png" id="FDseal2"/>
-	<p style="font-size: 3em; width: 100%; padding-top: 3%; text-align: center; background-color: #003366; color: #ffffff;">TIDELANDS REPORT</p>
-	<a href="" class="sectionlink" style="color: #ffffff; margin-left: 35.5%;">Tidelands Report</a>
-	<a href="" class="sectionlink" style="color: #ffffff;">FAQs</a>
-	<a href="media/WTG_sample_Tideland.pdf" class="sectionlink" style="color: #ffffff; border: none;">Sample Reports</a>
-	<div id="landingcontainerTL" class="TL">
-		<div id="landingwrapTL">
-			<p id="landingtitleTL">Tidelands Report</p>
-			<p id="landingtext1TL" class="landingtextTL">The State of New Jersey holds riparian (tidelands) claim on current and formerly flowed tidal waters. If a property is claimed, the owner must pay an annual 'rental' to the State in the form of a lease or license.</p>
-			<p id="landingtext2TL" class="landingtextTL">A Tidelands Claim is a cloud on a property owner's title regardless of whether or not that property owner is aware of the claim at the time of purchase.</p>
-			<p id="landingtextTL3" class="landingtextTL">The WTG Tidelands Report includes a search of public records for tideland claims on a property. If the subject property is found to have a claim, a review for grants, licenses and leases (instruments) of any claimed area will be performed. Any instruments found will be included in the Report.</p>
-			<p id="landingtextTL4" class="landingtextTL">The WTG Tidelands Report is insured. The report includes 'visual verification' map overlays including:</p>
-			<ul>
-				<li>Property Boundaries</li>
-				<li>Aerial/Satellite Imagery</li>
-				<li>Tideland Boundaries</li>
-				<li>Instruments of Claim</li>
-			</ul>
-		</div>
-		<img src="media/TL/Tidelands_Report.png" id="landingpicTL"/>
-	</div>
-</div>
-
-<div id="propertyPeakSection">
-	<p id="PPheader">PROPERTY PEEK REPORT</p>
-	<a href="" class="sectionlink" style="color: #003366;margin-left: 35.5%;">PROPERTY PEEK REPORT</a>
-	<a href="" class="sectionlink" style="color: #003366;">FAQs</a>
-	<a href="media/PEEK_REALTOR_SAMPLE_PEEK.pdf" class="sectionlink" style="color: #003366; border: none; margin-right: 20%;">Sample Reports</a>
-	<div id="landingcontainerPP" class="PP">
-		<div id="landingwrapPP">
-			<p id="landingtitlePP">Property Peek Report</p>
-			<p id="landingtext1PP" class="landingtextTL">The Property PEEK Report is a comprehensive Property Report that provides useful data and GIS maps for Realtors, engineers, surveys, banks, builders, title agents, attorneys, mortgage lenders, and other professionals.</p>
-			<p id="landingtext2pp" class="landingtextTL">This customizable report includes a 20-year tax assessment history, taxmap with satellite imagery, zoning map, historical aerials (going back to 1930), Category-1 water (with buffers), wetlands, preserved & open spaces, DEP-reported contaminated sites, farmland preserved and open spaces, CAFRA, Highlands management, Pineland, management, topo, soils data, and sewer service areas.</p>
-			<p id="landingtext3PP" class="landingtextTL">This report is not insured.  It is provided as a 'heads-up' for potential issues related to a property. Some of those issues require additional analysis beyond the scope of the report (i.e. for a complete wetlands analysis, an engineer must walk the property to survey and collect data).</p>
-		</div>
-		<img src="media/PP/PEEK.png" id="landingpicPP"/>
-	</div>
-
-</div>
-
-
-
-
-
-<div id="section5" class="section">
-	<div id="map"></div>
+<div id="section5">
 	<div class="contactdiv">
-		<h3 class="sectiontitle"><span style="color: #003366;">Contact </span>Us</h3>
+		<h1 class="contact-title">Contact Us</h1>
 		<p class="contact-text">Western Technologies Group LLC</p>
 		<p class="contact-text">Phone: 908-725-1143</p>
 		<p class="contact-text">Email us as:</p>
     	<p class="contact-text">info@wtgroupllc.com</p>
 		<p class="contact-text">360 E. Main Street</p>
 		<p class="contact-text">Somerville, New Jersey 08876</p>
+	<div class="social-wrapper">
+		<img src="media/landing/11.png" class="social-icon"/>
+		<img src="media/landing/12.png" class="social-icon"/>
+		<img src="media/landing/13.png" class="social-icon"/>
 	</div>
+	</div>
+	<div id="map"></div>
+	
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-
-
-
-
-
-<div id="vidcontainer" style="width: 100%; height: 855px;">
-	<div class="video-textbox">
-		<h1 class="video-text"><span style="color:#003366; width: 100%; display: block; font-size: 3.5em;">Our  Mission</span> is to provide...Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in ccillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h1>
-	</div>
-	<video autoplay preload="auto" class="video1">
-	  <source src="media/landing/signinglease.mp4" type="video/mp4">
-	  <source src="media/landing/signinglease.webm"  type="video/webm">
-	  <source src="media/landing/signinglease.ogv" type="video/ogg">
-	</video>
-
-</div>
-
-
-
-
-
-
-
-<div class="section">
-	<div class="industry-wrapper">
-		<img src="media/heldhome.png" id="industry1"/>
-	</div>
-	<div id="industry2"></div>
-</div>
-
-<div id="slide" class="section">
-	<div id="industrytrigger1">IndustryTrigger1</div>
-	<div id="industrytrigger2">IndustryTrigger2</div>
-	<div id="industrywrapper1">
-		<img src="media/heldhome.png" id="industry1"/>
-	</div>
-	<div id="industrywrapper2">
-		<img src="media/leasecontract.png" id="industry2"/>
+<div class="contactform-container">
+	<div class="contactform-contentwrapper">
+		<h1 class="title-CF">Here to help</h1>
+		<h3 class="subtitle-CF">Our team is here to listen, reach out to us with your questions or comments.</h3>
+		<form id="contactform">
+			<input  id="first_last_name" maxlength="40" name="first_name" type="text" class="feedback-input name-tile" placeholder="First Name"/>
+	        <input  id="email" maxlength="80" name="email" type="text" class="feedback-input email-tile" placeholder="Email"/>
+	        <input  id="phone" maxlength="40" name="phone" type="text" class="feedback-input pen-tile" placeholder="Phone"/>
+	        <input  id="phone" maxlength="40" name="phone" type="text" class="feedback-input pen-tile" placeholder="Phone"/>
+	        <div class="contact-wrap"> 	 	
+ 	  			<textarea name="description" id="description" class="feedback-textarea" placeholder="Please briefly describe your flood determination needs"></textarea>
+			<input type="submit" value="Send Message" id="contactSubmit" class="btncolor"/>
+	        </div>
+		</form>
 	</div>
 </div>
-
-<div id="backdrop" class="section">
-	<div id="backdroptrigger1">BackdropTrigger1</div>
-	<div id="backdroptrigger2">BackdropTrigger2</div>
-	<p id="backdropcaption"></p>
-</div>
--->
 
 
 </body>

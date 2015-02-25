@@ -7,7 +7,7 @@ var general = [
 	{
 		num0: "FLOOD RESOURCE CENTER",
 		num1: "\"Defining industry \'best-practices\' when it comes to reports, information, training, customer services, and consulting related to Flood & Tidelands.\"",
-		num2: "Staffed by Certified Floodplain Mangers with Local Knowledge and Extensive Experience.",
+		num2: "Staffed by Certified Floodplain Managers with Local Knowledge and Extensive Experience.",
 		num3: "We are Your Flood Resource."
 	},
 	//	1
@@ -22,7 +22,7 @@ var general = [
 		num0: "NJ PROPERY FAX",
 		num1: "The market is changing, buyers and sellers are more tech-savvy and want the best information.  They want to be more involved and informed than ever before.  They don't want surprises.",
 		num2: "NJ Property Fax, a Division of Western Technologies Group, provides New Jersey Realtors, engineers, attorneys, appraisers, surveyors, and other professionals access to in-depth property information and maps, specialized reports (Flood Determination, Tidelands Report, Property Peek Report), Tax maps and data, LOMA application services, educational and training programs, business development tools, and the best customer service in the industry.",
-		num3: "This subscription-based service is a ’must-have’ for professionals who create or service the real estate transaction."
+		num3: "This subscription-based service is a 'must-have' for professionals who create or service the real estate transaction."
 	},
 																				//	LANDING PAGE ROTATING IMAGES SRC'S
 	//	3
@@ -31,18 +31,26 @@ var general = [
 		num1: "media/landing/landing_pic01.png",
 		num2: "media/landing/landing_pic02.png",
 		num3: "media/landing/landing_pic03.png"
+	},	
+	//	4 																			GENERAL INFO
+	{
+		num0: "CLOSE LOG IN BOX",
+		num1: "LOG IN",
+		num2: "",
+		num3: ""
 	}	
+
 ]
 
 
 var info = [
 	//	0 	Industry Slider
 	{
-		num0: "media/landing/engineers_surveyors.png",
+		num0: "media/landing/industry/WTG_All_Industries.png",
 		num1: "INDUSTRIES",
 		num2: "The real estate transaction is a complex process that brings together a number of specialists, industries, and services.  Searching for a clear title, securing financing, inspecting the property, insuring the property, negotiating and closing the deal.",
 		num3: "Professionals who drive this process need accurate information to conduct due-diligence, insure regulatory compliance, and advocate for the needs of their client.",
-		num4: "Western Technologies is at the center this world.  Helping professionals make the right decisions that best serve the client and the market as a whole."
+		num4: "Western Technologies is at the center of this world.  Helping professionals make the right decisions that best serve the client and the market as a whole."
 	},
 	// 1 	Title Agencies 		
 	{
@@ -58,7 +66,8 @@ var info = [
 		num1: "REALTORS",
 		num2: "The real estate market is changing... Buyers and Sellers are increasingly tech savvy, want more involvement and information, and don't want surprises when it comes to the transaction.  The Western Technologies Flood Determination and Property PEEK Report helps Realtors step up to meet this new market expectation.",
 		num3: "From identifying properties that were misidentified and should never have been considered high flood risk, to providing Agents with powerful tools to secure more business - WTG provides reports, data, support, and training to real estate professional who want more.",
-		num4: "We recommend running a Flood Determination on every listing.   We believe this will become the new industry norm and expected by Sellers and their Agents."
+		num4: "We recommend running a Flood Determination on every listing.   We believe this will become the new industry norm and expected by Sellers and their Agents.",
+		num5: "management.html"
 	},
 	// 	3 	Banks & Mortgage Lenders 	
 	{
@@ -82,8 +91,8 @@ var info = [
 	{
 		num0: "media/landing/industry/appraiser.png",
 		num1: "APPRAISERS",
-		num2: "Appraiser Quick Info: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-		num3: "Appraiser Quick Info: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
+		num2: "Real Estate Appraisers need access to reliable property information to get the job done accurately and efficiently.  Western Technologies Group provides both commercial and residential appraisers the tools to maximize productivity and get the job done right. ",
+		num3: "From tax maps, square footage, and owner information to historical sales data, WTG has an exceptional map-based system for the industry.",
 		num4: "Appraiser Quick Info: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore"
 	},
 	//	6 	ATTORNEY
@@ -110,12 +119,12 @@ var info = [
 		num3: "Municipalities Quick Info: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
 		num4: "Municipalities Quick Info: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore"
 	},
-	//	9 	ZONE AH 
+	//	9 	BUILDING & CONSTRUCTION 
 	{
-		num0: "ZONE AH",
-		num1: "Flood depths of 1 to 3 feet (usually areas of ponding)",
-		num2: "Base Flood Elevations determined.",
-		num3: "media/landing/zoneAE.jpg"
+		num0: "media/landing/industry/building_construction.jpg",
+		num1: "BUILDERS & CONSTRUCTION",
+		num2: "Efficiency is key to profitability with every building project.  Identifying potential problems early on - from wetlands or Category-1 water to high-risk flood zones and riparian claims - is important from the go.",
+		num3: "The building and construction trades rely on Western Technologies Group to provide quick and easy access to reliable information.  From site selection to the day of occupancy, WTG is a trusted resource for builders and developers who need to know more."
 	},
 	//	10 	
 	{
@@ -162,7 +171,14 @@ var info = [
 		num1: "The 1% annual flood (100 year flood), also known as the base flood, is the flood that has a 1% chance of being equaled or exceeded in any given year.",
 		num2: "The Base Flood Elevation is the water-surface elevation of the 1% annual flood. The Special Flood Hazard Area is the area subject to flooding by the 1% annual chance flood. Areas of Special Flood Hazard include Zones AE, AH, AO, AR, A99, X, and VE."	
 	},
-	//	18 	Flood links src attr 
+	//	18 	ZONE AH 
+	{
+		num0: "ZONE AH",
+		num1: "Flood depths of 1 to 3 feet (usually areas of ponding)",
+		num2: "Base Flood Elevations determined.",
+		num3: "media/landing/zoneAE.jpg"
+	},
+	//	19 	Flood links src attr 
 	{
 		num0: "http://www.nhc.noaa.gov/",
 		num1: "https://www.floodsmart.gov/floodsmart/pages/flooding_flood_risks/map_update_schedule.jsp",
@@ -179,18 +195,31 @@ var info = [
 //	Object containing answers to each question in each individual sections (Flood Determination, Tidelands, Property Peek)
 
 var faq = [
-	//	 																	FLOOD DETERMINATION FAQ ANSWERS
-	//
+	//	0	 																	FLOOD DETERMINATION FAQ ANSWERS
 	{
-		num0: "",
-		num1: ""
+		num0: "a",
+		num1: "b",
+		num2: "c",
+		num3: "d",
+		num4: "e",
+		num5: "c",
+		num6: "g",
+		num7: "h",
+		num9: "i"
 	},
-	//	
+	//	1 																		TIDELANDS FAQ ANSWERS
 	{
-		num0: "",
-		num1: ""
+		num0: "a",
+		num1: "b",
+		num2: "c",
+		num3: "d",
+		num4: "e",
+		num5: "c",
+		num6: "g",
+		num7: "h",
+		num9: "i"
 	},
-	//	
+	//	2 																		PROPERTY PEEK FAQ ANSWERS	
 	{
 		num0: "",
 		num1: ""
@@ -212,11 +241,16 @@ var faq = [
 //	Animations, DOM set on page load
 
 $(document).ready(function($) {
-//	$("#leftPicB").attr("src", info[0].num0);
+	$("#leftPicB").attr("src", info[0].num0);
 	$("#industryTitleB").text(info[0].num1);
 	$("#industryTextB1").text(info[0].num2);
 	$("#industryTextB2").text(info[0].num3);
 	$("#industryTextB3").text(info[0].num4);
+	$("#leftPicA").attr("src", info[0].num0);
+	$("#industryTitleA").text(info[0].num1);
+	$("#industryTextA1").text(info[0].num2);
+	$("#industryTextA2").text(info[0].num3);
+	$("#industryTextA3").text(info[0].num4);
 	$("#infoboxtitleFD").text(info[17].num0);
 	$("#infoboxtext1FD").text(info[17].num1);
 	$("#infoboxtext2FD").text(info[17].num2);
@@ -226,15 +260,16 @@ $(document).ready(function($) {
 		var tl = new TimelineMax()
 		.from("#navlogo", 0.75, {xPercent: -100})
 		.to("#navlogo", 0.75, {opacity: 1}, "-=0.75")
-		.to("#navtitle", 1.2, {text:"WESTERN TECHNOLOGIES GROUP LLC", ease:Linear.easeNone})
-		.from("#floodcenter", 0.75, {xPercent: -100}, "-=0.5")
+		.from("#floodcenter", 0.75, {xPercent: -100}, "-=0.65")
 		.to("#floodcenter", 0.75, {opacity: 1}, "-=0.75")
-		.from("#njflood", 0.75, {xPercent: -100}, "-=0.5")
+		.from("#njflood", 0.75, {xPercent: -100}, "-=0.65")
 		.to("#njflood", 0.75, {opacity: 1}, "-=0.75")
-		.from("#njpf", 0.75, {xPercent: -100}, "-=0.5")
+		.from("#njpf", 0.75, {xPercent: -100}, "-=0.65")
 		.to("#njpf", 0.75, {opacity: 1}, "-=0.75")
-		.from("#logindummy", 0.75, {yPercent: 100})
-		.to("#logindummy", 0.75, {opacity: 1, onComplete: changeLanding1}, "-=0.75");        
+		.to("#navtitle", 1.2, {text:"WESTERN TECHNOLOGIES GROUP LLC", ease:Linear.easeNone})
+		/*.from("#logindummy", 0.75, {yPercent: 100})
+		.to("#logindummy", 0.75, {opacity: 1, onComplete: changeLanding1}, "-=0.75")*/
+		;        
 	}
 	function changeLanding1() {
 		var tl = new TimelineMax()
@@ -301,11 +336,11 @@ var widthcheck = $( window ).width();
 
 																					//	NAVBAR
 $(document).ready(function($) {
-	if (widthcheck > 1024) {
+	if (widthcheck >= 1024) {
 	// build tween
 	var tween = new TimelineMax()
 	.add (
-		TweenLite.to(navcontainer, 1, {scale: 0.7, top: "-2.5%"})
+		TweenLite.to(navcontainer, 1, {scale: 0.6, top: "-2.5%"})
 	)/*
 	.add (
 		TweenLine.to()
@@ -313,21 +348,21 @@ $(document).ready(function($) {
 	var scene = new ScrollScene({triggerElement: "#shrinkNav"})
 		.setTween(tween)
 		.addTo(controller);	
+		logincount = "A";
 	} else {
 		console.log("under 1024");
 	}
 });
 
 
-																					//	Shrinks wrapper at the same time as navbar 
 
-
+																				//	Shrinks wrapper at the same time as navbar 
 $(document).ready(function($) {
-	if (widthcheck > 1024) {
+	if (widthcheck >= 1024) {
 	// build tween
 	var tween = new TimelineMax()
 	.add (
-		TweenLite.to(navwrapper, 1, {height: "115px"})
+		TweenLite.to(navwrapper, 1, {height: "-=6.3%"})
 	)
 	var scene = new ScrollScene({triggerElement: "#shrinkNav"})
 		.setTween(tween)
@@ -336,7 +371,7 @@ $(document).ready(function($) {
 	} else {
 		console.log("under 1024");
 	}
-});
+}); 
 
 
 
@@ -344,16 +379,15 @@ $(document).ready(function($) {
 																					//	loginScrollBox move position once leave landing page. 
 
 $(document).ready(function($) {
-	if (widthcheck > 1024) {
+	if (widthcheck >= 1024) {
 	// build tween
 	var tween = new TimelineMax()
 	.add (
-		TweenLite.to(loginScrollbox, 1, {right: "0%", opacity: 0})
+		TweenLite.to(loginScrollbox, 0.75, {opacity: 0, display: "none", yPercent: "-20%"})
 	)
 	var scene = new ScrollScene({triggerElement: "#shrinkNav"})
 		.setTween(tween)
 		.addTo(controller);	
-		console.log("shrinkNav and Login tab fired")
 	} else {
 		console.log("under 1024");
 	}
@@ -362,20 +396,19 @@ $(document).ready(function($) {
 																					//	Login tab appears underneath scaled-down navbar
 
 $(document).ready(function($) {
-	if (widthcheck > 1024) {
+	if (widthcheck >= 1024) {
 	// build tween
 	var tween = new TimelineMax()
 	.add (
-		TweenLite.from(logintab, 1, {top: "115px"})
+		TweenLite.from(logintab, 1, {top: "-=100px"})
 	)
 	var scene = new ScrollScene({triggerElement: "#shrinkNav"})
 		.setTween(tween)
 		.addTo(controller);	
-		console.log("shrinkNav and Login tab fired")
 	} else {
 		console.log("under 1024");
 	}
-});
+});/* */
 
 
 
@@ -385,11 +418,11 @@ $(document).ready(function($) {
 																					//	PARTNERS 
 
 $(document).ready(function($) {
-	if (widthcheck > 1024) {
+	if (widthcheck >= 1024) {
 	// build tween
 	var tween = new TimelineMax()
 	.add (
-		TweenLite.from(".partner-image1", 0.75, {opacity: 0, paddingTop: "8%"})
+		TweenLite.from(".partner-image1", 1.15, {opacity: 0, paddingTop: "8%"})
 	)
 	var scene = new ScrollScene({triggerElement: "#partnerstrigger"})
 		.setTween(tween)
@@ -400,11 +433,11 @@ $(document).ready(function($) {
 });
 
 $(document).ready(function($) {
-	if (widthcheck > 1024) {
+	if (widthcheck >= 1024) {
 	// build tween
 	var tween = new TimelineMax()
 	.add (
-		TweenLite.from(".partner-image2", 0.75, {opacity: 0, paddingTop: "12%"})
+		TweenLite.from(".partner-image2", 1.75, {opacity: 0})
 	)
 	var scene = new ScrollScene({triggerElement: "#partnerstrigger"})
 		.setTween(tween)
@@ -416,7 +449,7 @@ $(document).ready(function($) {
 
 /*																					//	FLOOD RESOURCE VIDEO 
 $(document).ready(function($) {
-	if (widthcheck > 1024) {
+	if (widthcheck >= 1024) {
 	// build tween
 	var tween = new TimelineMax()
 	.add (
@@ -437,10 +470,19 @@ $(document).ready(function($) {
 
 
 																					//	Onclick Login Tab
+var logincount = "A";
+
 $(document).ready(function(){
 	$("#logintab").click(function(){
-		TweenLite.to("#loginScrollbox", 0.5, {display: "block", opacity: 0.9});
-		console.log("loginScrollbox fired");
+		if (logincount === "A") {
+			$("#logintab").text(general[4].num0);
+			TweenLite.to("#loginScrollbox", 0.5, {display: "block", opacity: 0.9});
+			logincount = "B";
+		} else {
+			$("#logintab").text(general[4].num1);
+			TweenLite.to("#loginScrollbox", 0.5, {opacity: 0, display: "none"});
+			logincount = "A";
+		}
 	});
 });
 
@@ -474,7 +516,7 @@ $(document).ready(function(){
 
 //	Animates in the LR logo
 $(document).ready(function($) {
-	if (widthcheck > 1024) {
+	if (widthcheck >= 1024) {
 	// build tween
 	var tween = new TimelineMax()
 	.add (
@@ -490,7 +532,7 @@ $(document).ready(function($) {
 
 //	Flood Resource landing section
 $(document).ready(function(){
-	$("#floodresourceTitle").click(function(){
+	$("#landinglinkFR").click(function(){
 		var tl = new TimelineMax()
 		tl.to(".FR", 0.5, {opacity: 0, display: "none"})
 		  .to("#landingcontainerFR", 1, {opacity: 1, display: "block"});
@@ -557,19 +599,19 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	$("#FRlink2").hover(function(){
-		$("#linkpreviewer").attr("src", info[18].num2);
+		$("#linkpreviewer").attr("src", info[19].num2);
   	});
 });
 
 $(document).ready(function(){
 	$("#FRlink3").hover(function(){
-		$("#linkpreviewer").attr("src", info[18].num3);
+		$("#linkpreviewer").attr("src", info[19].num3);
   	});
 });
 
 $(document).ready(function(){
 	$("#FRlink4").hover(function(){
-		$("#linkpreviewer").attr("src", info[18].num4);
+		$("#linkpreviewer").attr("src", info[19].num4);
   	});
 });
 
@@ -595,7 +637,7 @@ $(document).ready(function(){
 
 //	Animates in the LR logo
 $(document).ready(function($) {
-	if (widthcheck > 1024) {
+	if (widthcheck >= 1024) {
 	// build tween
 	var tween = new TimelineMax()
 	.add (
@@ -697,7 +739,7 @@ $(document).ready(function(){
 //	FD FAQs
 
 
-//	FAQs link
+//	FAQs link FD
 $(document).ready(function(){
 	$("#faqlinkFD").click(function(){
 		var tl = new TimelineMax()
@@ -709,7 +751,36 @@ $(document).ready(function(){
 
 
 
+$(document).ready(function(){
+	$("#FDQ1").click(function(){
+		$("#FDA1").text(faq[0].num0);
+	});
+	$("#FDQ2").click(function(){
+		$("#FDA1").text(faq[0].num1);
+	});
+	$("#FDQ3").click(function(){
+		$("#FDA1").text(faq[0].num2);
+	});
+	$("#FDQ4").click(function(){
+		$("#FDA1").text(faq[0].num3);
+	});
+	$("#FDQ5").click(function(){
+		$("#FDA1").text(faq[0].num4);
+	});
+	$("#FDQ6").click(function(){
+		$("#FDA1").text(faq[0].num5);
+	});
+	$("#FDQ7").click(function(){
+		$("#FDA1").text(faq[0].num6);
+	});
+	$("#FDQ8").click(function(){
+		$("#FDA1").text(faq[0].num7);
+	});
+	$("#FDQ9").click(function(){
+		$("#FDA1").text(faq[0].num8);
+	});
 
+});
 
 
 
@@ -736,7 +807,7 @@ $(document).ready(function(){
 
 //	Stamp logo
 $(document).ready(function($) {
-	if (widthcheck > 1024) {
+	if (widthcheck >= 1024) {
 	// build tween
 	var tween = new TimelineMax()
 	.add (
@@ -768,7 +839,23 @@ $(document).ready(function(){
 });
 
 
+//	Tidelands landing link
+$(document).ready(function(){
+	$("#landinglinkTL").click(function(){
+		var tl = new TimelineMax()
+		tl.fromTo(".TL", 0.5, {opacity: 1, display: "inline-block"}, {opacity: 0, display: "none"})
+		  .fromTo("#landingcontainerTL", 1, {opacity: 0, display: "none"}, {opacity: 1, display: "inline-block"});
+	});
+});
 
+//	FAQs link TL
+$(document).ready(function(){
+	$("#faqlinkTL").click(function(){
+		var tl = new TimelineMax()
+		tl.fromTo(".TL", 0.5, {opacity: 1, display: "inline-block"}, {opacity: 0, display: "none"})
+		  .fromTo("#faqcontainerTL", 1, {opacity: 0, display: "none"}, {opacity: 1, display: "inline-block"});
+	});
+});
 
 
 /*======================================================================================================================*/
@@ -793,7 +880,14 @@ $(document).ready(function(){
 });
 
 
-
+//	FAQs link TL
+$(document).ready(function(){
+	$("#faqlinkPP").click(function(){
+		var tl = new TimelineMax()
+		tl.fromTo(".PP", 0.5, {opacity: 1, display: "inline-block"}, {opacity: 0, display: "none"})
+		  .fromTo("#faqcontainerPP", 1, {opacity: 0, display: "none"}, {opacity: 1, display: "inline-block"});
+	});
+});
 
 
 /*======================================================================================================================*/
@@ -806,6 +900,7 @@ $(document).ready(function(){
 
 var slideIn = 0;
 
+var countIndustry = 0;
 
 //	TITLE AGENCIES
 
@@ -842,11 +937,13 @@ $(document).ready(function(){
 			  .fromTo("#slideA", 0.5, {scale: 0.75, opacity: 0.5}, {scale: 1, opacity: 1});
 			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
 		}
+		countIndustry = 1;
+		console.log("countIndustry" + countIndustry)
   	});
 });
 
 
-//	REAL ESTATE AGENTS
+//	REAL ESTATE AGENTS 								We still need to take out Learn More buttons
 
 $(document).ready(function(){
 	$("#industry2").click(function(){
@@ -857,6 +954,7 @@ $(document).ready(function(){
 		if (z === 1) {								
 	  		$("#leftPicB").attr("src", info[2].num0);
 			$("#industryTitleB").text(info[2].num1);
+			$('.learn-more').attr('href', 'management.html');
 			$("#industryTextB1").text(info[2].num2);
 			$("#industryTextB2").text(info[2].num3);
 			$("#industryTextB3").text(info[2].num4);
@@ -882,6 +980,7 @@ $(document).ready(function(){
 			  .fromTo("#slideA", 0.5, {scale: 0.75, opacity: 0.5}, {scale: 1, opacity: 1});
 			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
 		}
+		countIndustry = 2;
   	});
 });
 
@@ -922,6 +1021,7 @@ $(document).ready(function(){
 			  .fromTo("#slideA", 0.5, {scale: 0.75, opacity: 0.5}, {scale: 1, opacity: 1});
 			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
 		}
+		countIndustry = 3;
   	});
 });
 
@@ -962,6 +1062,7 @@ $(document).ready(function(){
 			  .fromTo("#slideA", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
 			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
 		}
+		countIndustry = 4;
   	});
 });
 
@@ -1002,6 +1103,7 @@ $(document).ready(function(){
 			  .fromTo("#slideA", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
 			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
 		}
+		countIndustry = 5;
   	});
 });
 
@@ -1042,6 +1144,7 @@ $(document).ready(function(){
 			  .fromTo("#slideA", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
 			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
 		}
+		countIndustry = 6;
   	});
 });
 
@@ -1082,6 +1185,7 @@ $(document).ready(function(){
 			  .fromTo("#slideA", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
 			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
 		}
+		countIndustry = 7;
   	});
 });
 
@@ -1122,6 +1226,7 @@ $(document).ready(function(){
 			  .fromTo("#slideA", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
 			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
 		}
+		countIndustry = 8;
   	});
 });
 
@@ -1129,14 +1234,49 @@ $(document).ready(function(){
 
 // Next Industry Button
 
-var countIndustry = 0;
 
 $(document).ready(function(){
 	$("#nextIndustry").click(function(){
 		countIndustry++;
+		if (countIndustry === 9) {
+			countIndustry = 1;
+		}
 		i = countIndustry;
 		console.log(countIndustry);
-		$("#leftPicB").attr("src", info[i].num0);
+		slideIn = slideIn + 1;
+		var y = 2;
+		z = slideIn % y;
+  		console.log(slideIn);
+		if (z === 1) {								
+	  		$("#leftPicB").attr("src", info[i].num0);
+			$("#industryTitleB").text(info[i].num1);
+			$("#industryTextB1").text(info[i].num2);
+			$("#industryTextB2").text(info[i].num3);
+			$("#industryTextB3").text(info[i].num4);
+			TweenLite.defaultEase = Power3.easeInOut;
+			var tl = new TimelineMax()
+			tl.fromTo("#slideA", 0.5, {scale: 1, opacity: 1}, {scale: 0.5, opacity: 0.5})
+			  .fromTo("#slideA", 0.75, {xPercent: 0}, {xPercent: 100})
+		 	  .fromTo("#slideB", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
+			  .fromTo("#slideB", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
+			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
+
+		} else {
+			$("#leftPicA").attr("src", info[i].num0);
+			$("#industryTitleA").text(info[i].num1);
+			$("#industryTextA1").text(info[i].num2);
+			$("#industryTextA2").text(info[i].num3);
+			$("#industryTextA3").text(info[i].num4);
+			TweenLite.defaultEase = Power3.easeInOut;
+			var tl = new TimelineMax()
+			tl.fromTo("#slideB", 0.5, {scale: 1, opacity: 1}, {scale: 0.5, opacity: 0.5})
+			  .fromTo("#slideB", 0.75, {xPercent: 0}, {xPercent: 100})
+		 	  .fromTo("#slideA", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
+			  .fromTo("#slideA", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
+			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
+		}
+
+		/* $("#leftPicB").attr("src", info[i].num0);
 		$("#industryTitleB").text(info[i].num1);
 		$("#industryTextB1").text(info[i].num2);
 		$("#industryTextB2").text(info[i].num3);
@@ -1146,7 +1286,7 @@ $(document).ready(function(){
 		tl.fromTo("#slideA", 0.5, {scale: 1, opacity: 1}, {scale: 0.5, opacity: 0.5})
 		  .fromTo("#slideA", 0.75, {xPercent: 0}, {xPercent: 100})
 		  .fromTo("#slideB", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
-		  .fromTo("#slideB", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
+		  .fromTo("#slideB", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});*/
   	});
 });
 
@@ -1155,19 +1295,45 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$("#prevIndustry").click(function(){
 		countIndustry--;
+		if (countIndustry < 1) {
+			countIndustry = 8;
+		}
+		var i = countIndustry;
+		console.log(countIndustry);
 		i = countIndustry;
 		console.log(countIndustry);
-		$("#leftPicB").attr("src", info[i].num0);
-		$("#industryTitleB").text(info[i].num1);
-		$("#industryTextB1").text(info[i].num2);
-		$("#industryTextB2").text(info[i].num3);
-		$("#industryTextB3").text(info[i].num4);
-		TweenLite.defaultEase = Power3.easeInOut;
-		var tl = new TimelineMax()
-		tl.fromTo("#slideA", 0.5, {scale: 1, opacity: 1}, {scale: 0.5, opacity: 0.5})
-		  .fromTo("#slideA", 0.75, {xPercent: 0}, {xPercent: 100})
-		  .fromTo("#slideB", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
-		  .fromTo("#slideB", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
+		slideIn = slideIn + 1;
+		var y = 2;
+		z = slideIn % y;
+  		console.log(slideIn);
+		if (z === 1) {								
+	  		$("#leftPicB").attr("src", info[i].num0);
+			$("#industryTitleB").text(info[i].num1);
+			$("#industryTextB1").text(info[i].num2);
+			$("#industryTextB2").text(info[i].num3);
+			$("#industryTextB3").text(info[i].num4);
+			TweenLite.defaultEase = Power3.easeInOut;
+			var tl = new TimelineMax()
+			tl.fromTo("#slideA", 0.5, {scale: 1, opacity: 1}, {scale: 0.5, opacity: 0.5})
+			  .fromTo("#slideA", 0.75, {xPercent: 0}, {xPercent: 100})
+		 	  .fromTo("#slideB", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
+			  .fromTo("#slideB", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
+			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
+
+		} else {
+			$("#leftPicA").attr("src", info[i].num0);
+			$("#industryTitleA").text(info[i].num1);
+			$("#industryTextA1").text(info[i].num2);
+			$("#industryTextA2").text(info[i].num3);
+			$("#industryTextA3").text(info[i].num4);
+			TweenLite.defaultEase = Power3.easeInOut;
+			var tl = new TimelineMax()
+			tl.fromTo("#slideB", 0.5, {scale: 1, opacity: 1}, {scale: 0.5, opacity: 0.5})
+			  .fromTo("#slideB", 0.75, {xPercent: 0}, {xPercent: 100})
+		 	  .fromTo("#slideA", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
+			  .fromTo("#slideA", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
+			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
+		}
   	});
 });
 
@@ -1271,17 +1437,17 @@ var map;
     });
 
 
-// Bookflap 
+// Bookflap 		FLOOD CENTER LOGO ROLL OVER
 
 $(document).ready(function(){
+	if (widthcheck <= 1441 && widthcheck >=1024) {
 var tl = new TimelineLite();
-	//	FLOOD CENTER LOGO ROLL OVER
 	$(document).on("mouseenter","#floodcenter",function(){
 		$("#flaptitle").text(general[0].num0);
 		$("#flaptext1").text(general[0].num1);
 		$("#flaptext2").text(general[0].num2);
 		$("#flaptext3").text(general[0].num3);
-		tl.to("#njpfFlap", 0.5, {width:"25%"})
+		tl.to("#njpfFlap", 0.5, {width:"420px"})
 		.to("#flaptitle", 0.2, {opacity:1})
 		.to(".flap-text", 0.2, {opacity:1});
 	});
@@ -1295,7 +1461,7 @@ var tl = new TimelineLite();
 		$("#flaptext1").text(general[1].num1);
 		$("#flaptext2").text(general[1].num2);
 		$("#flaptext3").text(general[1].num3);
-		tl.to("#njpfFlap", 0.5, {width:"25%"})
+		tl.to("#njpfFlap", 0.5, {width:"420px"})
 		.to("#flaptitle", 0.2, {opacity:1})
 		.to(".flap-text", 0.2, {opacity:1});
 	});
@@ -1305,22 +1471,69 @@ var tl = new TimelineLite();
 		.to("#flaptitle", 0.01, {opacity:0})
 		.to("#njpfFlap", 0.01, {width:"0%"});
 	});
-
 	$(document).on("mouseenter","#njpf",function(){
 		$("#flaptitle").text(general[2].num0);
 		$("#flaptext1").text(general[2].num1);
 		$("#flaptext2").text(general[2].num2);
 		$("#flaptext3").text(general[2].num3);
-		tl.to("#njpfFlap", 0.5, {width:"25%"})
+		tl.to("#njpfFlap", 0.5, {width:"420px"})
 		.to("#flaptitle", 0.2, {opacity:1})
 		.to(".flap-text", 0.2, {opacity:1});
 	});
 	$(document).on("mouseleave", "#njpf", function(){
-		$("#flaptitle").text(general[0].num2);
+		$("#flaptitle").text(general[0].num0);
 		tl.to(".flap-text", 0.01, {opacity:0})
 		.to("#flaptitle", 0.01, {opacity:0})
 		.to("#njpfFlap", 0.01, {width:"0%"});
 	});	
+	} else {
+		var tl = new TimelineLite();
+	//	FLOOD CENTER LOGO ROLL OVER
+	$(document).on("mouseenter","#floodcenter",function(){
+		$("#flaptitle").text(general[0].num0);
+		$("#flaptext1").text(general[0].num1);
+		$("#flaptext2").text(general[0].num2);
+		$("#flaptext3").text(general[0].num3);
+		tl.to("#njpfFlap", 0.5, {width:"28.2%"})
+		.to("#flaptitle", 0.2, {opacity:1})
+		.to(".flap-text", 0.2, {opacity:1});
+	});
+	$(document).on("mouseleave", "#floodcenter", function(){
+		tl.to(".flap-text", 0.01, {opacity:0})
+		.to("#flaptitle", 0.01, {opacity:0})
+		.to("#njpfFlap", 0.01, {width:"0%"});
+	});
+	$(document).on("mouseenter","#njflood",function(){
+		$("#flaptitle").text(general[1].num0);
+		$("#flaptext1").text(general[1].num1);
+		$("#flaptext2").text(general[1].num2);
+		$("#flaptext3").text(general[1].num3);
+		tl.to("#njpfFlap", 0.5, {width:"28.2%"})
+		.to("#flaptitle", 0.2, {opacity:1})
+		.to(".flap-text", 0.2, {opacity:1});
+	});
+	$(document).on("mouseleave", "#njflood", function(){
+		$("#flaptitle").text(general[0].num1);
+		tl.to(".flap-text", 0.01, {opacity:0})
+		.to("#flaptitle", 0.01, {opacity:0})
+		.to("#njpfFlap", 0.01, {width:"0%"});
+	});
+	$(document).on("mouseenter","#njpf",function(){
+		$("#flaptitle").text(general[2].num0);
+		$("#flaptext1").text(general[2].num1);
+		$("#flaptext2").text(general[2].num2);
+		$("#flaptext3").text(general[2].num3);
+		tl.to("#njpfFlap", 0.5, {width:"28.2%"})
+		.to("#flaptitle", 0.2, {opacity:1})
+		.to(".flap-text", 0.2, {opacity:1});
+	});
+	$(document).on("mouseleave", "#njpf", function(){
+		$("#flaptitle").text(general[0].num0);
+		tl.to(".flap-text", 0.01, {opacity:0})
+		.to("#flaptitle", 0.01, {opacity:0})
+		.to("#njpfFlap", 0.01, {width:"0%"});
+	});	
+}
 });
 
 
@@ -1346,7 +1559,7 @@ Previous Industry animations
 
 //	Stamp logo from Property Peek section, but took it out since we have 
 $(document).ready(function($) {
-	if (widthcheck > 1024) {
+	if (widthcheck >= 1024) {
 	// build tween
 	var tween = new TimelineMax()
 	.add (
