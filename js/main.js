@@ -46,7 +46,7 @@ var general = [
 var info = [
 	//	0 	Industry Slider
 	{
-		num0: "media/landing/industry/WTG_All_Industries.png",
+		num0: "media/landing/industry/WTG-Solar-System_line_artFLAT.png",
 		num1: "INDUSTRIES",
 		num2: "The real estate transaction is a complex process that brings together a number of specialists, industries, and services.  Searching for a clear title, securing financing, inspecting the property, insuring the property, negotiating and closing the deal.",
 		num3: "Professionals who drive this process need accurate information to conduct due-diligence, insure regulatory compliance, and advocate for the needs of their client.",
@@ -126,50 +126,89 @@ var info = [
 		num2: "Efficiency is key to profitability with every building project.  Identifying potential problems early on - from wetlands or Category-1 water to high-risk flood zones and riparian claims - is important from the go.",
 		num3: "The building and construction trades rely on Western Technologies Group to provide quick and easy access to reliable information.  From site selection to the day of occupancy, WTG is a trusted resource for builders and developers who need to know more."
 	},
-	//	10 	
-	{
-		num0: "ZONE AO",
-		num1: "Flood Depths of 1 to 3 feet (usually sheet flow on sloping terrain)",
-		num2: "Average depths determined. For areas of alluvial fan flooding, velocities also determined."
-	},
-	// 	11
-	{
-		num0: "ZONE AR",
-		num1: "Special Flood Hazard Area formerly protected from the 1% annual chance flood by a flood control system that was subsequently decertified.",
-		num2: "Zone AR indicates that the former flood control system is being restored to provide protection from the 1% annual chance or greater flood."	
-	},
-	//	12
-	{
-		num0: "ZONE A99",
-		num1: "Area to be protected from 1% annual chance flood by a Federal flood protection system under construction.",
-		num2: "No Base Flood Elevations determined."	
-	},
-	// 	13
-	{
-		num0: "ZONE VE",
-		num1: "Coastal flood zone with velocity hazard (wave action); Base Flood Elevations determined.",
-		num2: "No Base Flood Elevations determined."	
-	},
-	//	14
-	{
-		num0: "ZONE X0.2",
-		num1: "Areas of 0.2% annual chance flood; areas of 1% annual chance flood with average depths of less than 1 foot or with drainage areas less than 1 square mile; and areas protected by levees from 1% annual chance flood. "
-	},
-	//	15
-	{
-		num0: "ZONE X",
-		num1: "Areas determined to be outside the 0.2% annual chance floodplain. "
-	},
-	//	16
-	{
-		num0: "ZONE D",
-		num1: "Areas in which flood hazards are undetermined, but possible."
-	},
+		// 10 
+
+	 {
+
+	  num0: "ZONE AO",
+
+	  num1: "High Risk Zone.  Flood Depths of 1 to 3 feet (usually sheet flow on sloping terrain)",
+
+	  num2: "Average depths determined. For areas of alluvial fan flooding, velocities also determined."
+
+	 },
+
+	 //  11
+
+	 {
+
+	  num0: "ZONE AR",
+
+	  num1: "High Risk Zone formerly protected from the 1% annual chance flood by a flood control system that was subsequently decertified.",
+
+	  num2: "Zone AR indicates that the former flood control system is being restored to provide protection from the 1% annual chance or greater flood."
+
+	 },
+
+	 // 12
+
+	 {
+
+	  num0: "ZONE A99",
+
+	  num1: "High Risk Zone. Area to be protected from 1% annual chance flood by a Federal flood protection system under construction.",
+
+	  num2: "No Base Flood Elevations determined."
+
+	 },
+
+	 //  13
+
+	 {
+
+	  num0: "ZONE VE",
+
+	  num1: "High Risk Zone.  Coastal flood zone with velocity hazard (wave action above 3’); Base Flood Elevations determined.",
+
+	  num2: "No Base Flood Elevations determined."
+
+	 },
+
+	 // 14
+
+	 {
+
+	  num0: "ZONE X0.2",
+
+	  num1: "Low Risk Zone. Areas of 0.2% annual chance flood; areas of 1% annual chance flood with average depths of less than 1 foot or with drainage areas less than 1 square mile; and areas protected by levees from 1% annual chance flood. "
+
+	 },
+
+	 // 15
+
+	 {
+
+	  num0: "ZONE X",
+
+	  num1: "Low Risk Zone.  Areas determined to be outside the 0.2% annual chance floodplain. "
+
+	 },
+
+	 // 16
+
+	 {
+
+	  num0: "ZONE D",
+
+	  num1: "Areas in which flood hazards are undetermined, but possible."
+
+	 },
+	
 	//	17 	Flood Zone Legend (when this subsection is loaded, this is the first data that is set in the DOM)
 	{
 		num0: "FLOOD ZONE LEGEND",
-		num1: "The 1% annual flood (100 year flood), also known as the base flood, is the flood that has a 1% chance of being equaled or exceeded in any given year.",
-		num2: "The Base Flood Elevation is the water-surface elevation of the 1% annual flood. The Special Flood Hazard Area is the area subject to flooding by the 1% annual chance flood. Areas of Special Flood Hazard include Zones AE, AH, AO, AR, A99, X, and VE."	
+		num1: "Everyone in the United States lives in a flood zone.  Under the FEMA designation, there are two general types of zones – low risk zones (green buttons below) and high risk zones - known as Special Flood Hazard Areas / SFHA (red buttons below).",
+		num2: "Low risk zones generally begin with the letter X, high-risk zones generally begin with the letters A or V. "	
 	},
 	//	18 	ZONE AH 
 	{
@@ -197,32 +236,69 @@ var info = [
 var faq = [
 	//	0	 																	FLOOD DETERMINATION FAQ ANSWERS
 	{
-		num0: "a",
-		num1: "b",
-		num2: "c",
-		num3: "d",
-		num4: "e",
-		num5: "c",
-		num6: "g",
-		num7: "h",
-		num9: "i"
+		num0: "A Flood Determination is a document that provides information and confirms the flood status of specific property.  The WTG Flood Determination includes (i) the FEMA Standard Form that identities the zone and states whether flood insurance is required under the NFIP rules (ii) Visual verification maps that presents imagery our experts use in their analysis (iii) Flood Zone legend (iv) Advisory/Preliminary maps (when available) so the property owner can have a ‘heads up’ to possible future changes in their flood zone.",
+		num1: "In some cases yes.  There are many properties that have been previously misidentified, where the owner was told they were in a high risk flood zone when in fact they never were.  The WTG Flood Determination can be used challenge these incorrect determinations.",
+		num2: "If your property was misidentified (see previous FAQ) and is not in a high risk flood zone, then our report can be used to lower your flood insurance premiums.  In some cases where there is conflicting information (i.e. you were previously told you were in a SFHA and our reports shows you are not), then the insurer may require an elevation certificate to resolve the issue.  We can help guide you with these steps.  In addition, you can use our free Flood Risk Evaluator (link to page) to see if there are steps you can take to lower your premiums even if you are in a high risk zone.",
+		num3: "Yes.  This report is insured for $2,000,000.  Specific terms are included with the report.",
+		num4: "Under the National Flood Insurance Program (NFIP) rules, you would not be in a high risk zone.  If your structure is in an X or X.2% zone, you are considered low risk and do not require flood insurance.  However, our suggestion is that you get flood insurance for the added protection.  The premium would be very low.",
+		num5: "While there are other reputable companies out there doing flood determinations, our experience is that we have a particularly exceptional and accurate report.  The systems we have in place to identify the property and conduct an accurate analysis is the best the industry has to offer.  In addition, we offer visual verification and tax maps, so the user can see the data we used in the analysis.  Also, the report is insured.",
+		num6: "The idea of ‘new maps’ vs. ‘old maps’ is a misconception.   There are current maps (called effective maps) that we use for the Determination.  The ‘new maps’ that came out after Sandy are Advisory and/or Preliminary and cannot be used as the basis for a Flood Determination.  Eventually these advisory maps will become ‘effective’ .  At that time we will use them as the basis for our Determination.",
+		num7: "Our clients include Mortgage Companies, Banks, and Insurance Companies.  Using these companies ensure that the conclusion of our reports will be honored.  If your lender or insurance company does not use the WTG Flood Determination, there could be a situation where our report’s conclusion is different from theirs.  In those cases a few things could happen.  Sometimes out data is so convincing that they change their position based on our report alone.  In cases where they don’t just accept our conclusion, the next step is often to hire a surveyor to do an Elevation Certificate to resolve the issue.",
+		num8: "Yes.  Buyers like accurate information about a property they are buying.  Realtors will often run our Food Determination and have a copy attached to the MLS Listing.    Also, if your property is in a town that has a reputation for flooding but is not in a high risk flood zone, Realtors can use out report to increase buyer interest and activity."
 	},
 	//	1 																		TIDELANDS FAQ ANSWERS
 	{
-		num0: "a",
-		num1: "b",
-		num2: "c",
-		num3: "d",
-		num4: "e",
-		num5: "c",
-		num6: "g",
-		num7: "h",
-		num9: "i"
+		num0: "Tidelands, also known as riparian lands, are all lands that are currently and formerly flowed by the mean high tide of a natural waterway.  Barnegat Bay, a naturally tidal body of water, is an example of tidelands.  However, New Creek, a tiny tidal stream that flowed through the city of Newark a century ago but has since been filled in and built over, is also an example of tidelands.  New Jersey contains an extensive network of tidelands, both big and small.",
+		num1: "The State of New Jersey claims ownership of these tidelands and holds them in trust for the people of the state.  All tidelands are overseen by the Tidelands Resource Council, a board of twelve Governor-appointed volunteers, along with DEP staff at the Bureau of Tidelands Management.",
+		num2: "Since tidelands are public lands, you must obtain written permission from the state and pay a fee in order to use these lands.  Common uses of tidelands include docks, mooring piles, bulkheads and other fill materials.  Some tidelands may be sold in the form of a Riparian Grant while others may only be rented through either a Tidelands License or Lease.",
+		num3: "The WTG Tidelands Report is a search for the presence of a State tideland claim on a specific property; including a search for any instruments (Grants, Leases, and Licenses) associated with that claim. ",
+		num4: "",
+		num5: "",
+		num6: "Definitely yes.  Tidelands claims include current and formerly flowed tidal water.  Some of these claims go back more than 100 years.  Every county in New Jersey – with the exception of Hunterdon, Warren, Sussex, and Morris - have tideland claims.   Some of these claims are many miles from the ocean.",
+		num7: "",
+		num8: "",
+		num9: "A State Tidelands Claim is a cloud on a property owner’s title regardless of whether or not that property owner is aware of the claim at the time of purchase.   When a property is being sold, the Title company will run a riparian (Tidelands) report.  If a claim is found the Title company may require monies be held in escrow to cover the claim, or that the claim be released prior to sale.",
+		num10: "In addition, securing a mortgage will be difficult or impossible until the issues are resolved.    If there is a need to petition the Tidelands Bureau for a resolution, that process can take months or even years for final resolution.",
+		num11: "",
+		num12: "A Tidelands lease, license, and grant are instruments issues by the State of New Jersey.",
+		num13: "A Tidelands Lease is a long term rental agreement from the State of New Jersey for the use of its tidelands. Leases are generally issued for projects involving long term financing issues such as houses that have been constructed over currently flowed tidelands or large scale development projects. A Tidelands License is a short term rental agreement from the State of New Jersey for the use of its tidelands.  Licenses may be issued for fixed structures, such as docks, piers, mooring piles, floating docks, boat lifts, riprap, and bulkheads.",
+		num14: "A Tidelands Grant is a deed from the State of New Jersey for the sale of its tidelands.  A grant releases all rights to the upland owner and relinquishes the right of the State.   In general, the State of New Jersey will only issue a grant for formerly flowed claims.",
+		num15: "A Statement of No Interest is an official document issued by the State of New Jersey attesting to the fact that a particular property or area is free from all State tidelands claims.",
+		num16: "",
+		num17: "",
+		num18: "Definitely Yes.  We regularly see situations where a Title company runs a Tidelands Report on a property being sold and an unknown claim is discovered.",
+		num19: "",
+		num20: "",
+		num21: "Yes.  The WTG Tidelands Report is insured for $2,000,000.  The terms of this warranty is included with each report. ",
+		num22: "",
+		num23: ""
 	},
 	//	2 																		PROPERTY PEEK FAQ ANSWERS	
 	{
-		num0: "",
-		num1: ""
+		num0: "The Property PEEK is a 25-page comprehensive report that presents a wealth of information about a property and its immediate surroundings.",
+		num1: "The report includes lot data and tax maps, 20-year historical tax assessments, and GIS maps depicting wetlands, category-1 water (with buffers), topography, preserved & open spaces, sewer service areas, CAFRA, Highlands, Pinelands Management, current and historical aerials (1974,1930), DEP-reported contaminated sites, soils data, and other information.",
+		num2: "",
+		num3: "The more you know about your property… the more you know about your world.",
+		num4: "Everyone who owns a home or business in New Jersey should order a Property PEEK.  Anyone who is buying or renting a home should order a Property PEEK.  Anyone who is interested in a particular property for whatever reason should order a Property PEEK.  Professionals involved in the real estate transaction should order a Property PEEK.  Packed full of information to inform, educate, promote and wow!",
+		num5: "",
+		num6: "New Jersey Realtors are using the Property PEEK Reports every day. The report helps them provide important information to their Buyers, helps them secure more business by strengthening their listing presentation, and helps them brand and promote their services to the market. ",
+		num7: "",
+		num8: "",
+		num9: "Builders use the Property PEEK Report for preliminary information about a specific lot prior to investing time and money in engineering and permits.  Coupled with our Flood Determination and research tools at NJPropertyFax.com, builders are being more productive and profitable using the WTG PEEK. ",
+		num10: "",
+		num11: "",
+		num12: "No, the Property PEEK Report is not insured.  The report is an aggregation of information from public sources (i.e. NJ State DEP).  We do not provide verification or analysis on the data, we simply pass it along as a ‘head up’ for the property owner. The report is for informational purposes only and should not be used on its own for any decisions related to construction or purchase without additional research and due diligence.",
+		num13: "For example, wetlands data is presented based on information and maps provided by the DEP.  A true wetlands analysis can only be completed by a trained and licensed professional who actually walks the property and collects and analyzes data.  Our wetlands map can be the first step in a process, but needs to be followed by additional steps.",
+		num14: "",
+		num15: "",
+		num16: "",
+		num17: "",
+		num18: "",
+		num19: "",
+		num20: "",
+		num21: "",
+		num22: "",
+		num23: ""
 	},
 	//	
 	{
@@ -236,6 +312,125 @@ var faq = [
 	},
 
 ]
+
+$(document).ready(function(){
+	$("#FDQ1").click(function(){
+		$("#FDA1").text(faq[0].num0);
+	});
+	$("#FDQ2").click(function(){
+		$("#FDA1").text(faq[0].num1);
+	});
+	$("#FDQ3").click(function(){
+		$("#FDA1").text(faq[0].num2);
+	});
+	$("#FDQ4").click(function(){
+		$("#FDA1").text(faq[0].num3);
+	});
+	$("#FDQ5").click(function(){
+		$("#FDA1").text(faq[0].num4);
+	});
+	$("#FDQ6").click(function(){
+		$("#FDA1").text(faq[0].num5);
+	});
+	$("#FDQ7").click(function(){
+		$("#FDA1").text(faq[0].num6);
+	});
+	$("#FDQ8").click(function(){
+		$("#FDA1").text(faq[0].num7);
+	});
+	$("#FDQ9").click(function(){
+		$("#FDA1").text(faq[0].num8);
+	});
+
+});
+
+
+$(document).ready(function(){
+	$("#PPQ1").click(function(){
+		$("#PPA1").text(faq[2].num0);
+		$("#PPA2").text(faq[2].num1);
+		$("#PPA3").text(faq[2].num2);
+	});
+	$("#PPQ2").click(function(){
+		$("#PPA1").text(faq[2].num3);
+		$("#PPA2").text(faq[2].num4);
+		$("#PPA3").text(faq[2].num5);
+	});
+	$("#PPQ3").click(function(){
+		$("#PPA1").text(faq[2].num6);
+		$("#PPA2").text(faq[2].num7);
+		$("#PPA3").text(faq[2].num8);
+	});
+	$("#PPQ4").click(function(){
+		$("#PPA1").text(faq[2].num9);
+		$("#PPA2").text(faq[2].num10);
+		$("#PPA3").text(faq[2].num11);
+	});
+	$("#PPQ5").click(function(){
+		$("#PPA1").text(faq[2].num12);
+		$("#PPA2").text(faq[2].num13);
+		$("#PPA3").text(faq[2].num14);
+	});
+	/*$("#PPQ6").click(function(){
+		$("#PPA1").text(faq[1].num15);
+		$("#PPA2").text(faq[1].num16);
+		$("#PPA3").text(faq[1].num17);
+	});
+	$("#PPQ7").click(function(){
+		$("#PPA1").text(faq[1].num18);
+		$("#PPA2").text(faq[1].num19);
+		$("#PPA3").text(faq[1].num20);
+	});
+	$("#PPQ8").click(function(){
+		$("#PPA1").text(faq[1].num21);
+		$("#PPA2").text(faq[1].num22);
+		$("#PPA3").text(faq[1].num23);
+	});*/
+});
+
+
+$(document).ready(function(){
+	$("#TLQ1").click(function(){
+		$("#TLA1").text(faq[1].num0);
+		$("#TLA2").text(faq[1].num1);
+		$("#TLA3").text(faq[1].num2);
+	});
+	$("#TLQ2").click(function(){
+		$("#TLA1").text(faq[1].num3);
+		$("#TLA2").text(faq[1].num4);
+		$("#TLA3").text(faq[1].num5);
+	});
+	$("#TLQ3").click(function(){
+		$("#TLA1").text(faq[1].num6);
+		$("#TLA2").text(faq[1].num7);
+		$("#TLA3").text(faq[1].num8);
+	});
+	$("#TLQ4").click(function(){
+		$("#TLA1").text(faq[1].num9);
+		$("#TLA2").text(faq[1].num10);
+		$("#TLA3").text(faq[1].num11);
+	});
+	$("#TLQ5").click(function(){
+		$("#TLA1").text(faq[1].num12);
+		$("#TLA2").text(faq[1].num13);
+		$("#TLA3").text(faq[1].num14);
+	});
+	$("#TLQ6").click(function(){
+		$("#TLA1").text(faq[1].num15);
+		$("#TLA2").text(faq[1].num16);
+		$("#TLA3").text(faq[1].num17);
+	});
+	$("#TLQ7").click(function(){
+		$("#TLA1").text(faq[1].num18);
+		$("#TLA2").text(faq[1].num19);
+		$("#TLA3").text(faq[1].num20);
+	});
+	$("#TLQ8").click(function(){
+		$("#TLA1").text(faq[1].num21);
+		$("#TLA2").text(faq[1].num22);
+		$("#TLA3").text(faq[1].num23);
+	});
+});
 
 
 //	Animations, DOM set on page load
@@ -562,7 +757,7 @@ $(document).ready(function(){
 	$("#calculator").click(function(){
 		var tl = new TimelineMax()
 		tl.to(".FR", 0.5, {opacity: 0, display: "none"})
-		  .to("#calcWrapper", 1, {opacity: 1, display: "block"});
+		  .to("#FREwrapper", 1, {opacity: 1, display: "block"});
   });
 });
 
@@ -735,6 +930,105 @@ $(document).ready(function(){
 	});
 });
 
+//	Zone 0.2%
+$(document).ready(function(){
+	$("#FDblock2").click(function(){
+		TweenLite.to(".FDbox", 0.5, {opacity: 0, onComplete: FDbox});
+		function FDbox() {
+		$("#infoboxtitleFD").text(info[11].num0);
+		$("#infoboxtext1FD").text(info[11].num1);
+		$("#infoboxtext2FD").text(info[11].num2);
+		TweenLite.to(".FDbox", 0.75, {opacity: 1});	
+		console.log("FDbox function fired");
+		}
+	});
+});
+
+//	Zone AE
+$(document).ready(function(){
+	$("#FDblock3").click(function(){
+		TweenLite.to(".FDbox", 0.5, {opacity: 0, onComplete: FDbox});
+		function FDbox() {
+		$("#infoboxtitleFD").text(info[12].num0);
+		$("#infoboxtext1FD").text(info[12].num1);
+		$("#infoboxtext2FD").text(info[12].num2);
+		TweenLite.to(".FDbox", 0.75, {opacity: 1});	
+		console.log("FDbox function fired");
+		}
+	});
+});
+
+
+//	Zone A
+$(document).ready(function(){
+	$("#FDblock4").click(function(){
+		TweenLite.to(".FDbox", 0.5, {opacity: 0, onComplete: FDbox});
+		function FDbox() {
+		$("#infoboxtitleFD").text(info[13].num0);
+		$("#infoboxtext1FD").text(info[13].num1);
+		$("#infoboxtext2FD").text(info[13].num2);
+		TweenLite.to(".FDbox", 0.75, {opacity: 1});	
+		console.log("FDbox function fired");
+		}
+	});
+});
+
+
+//	Zone AH
+$(document).ready(function(){
+	$("#FDblock5").click(function(){
+		TweenLite.to(".FDbox", 0.5, {opacity: 0, onComplete: FDbox});
+		function FDbox() {
+		$("#infoboxtitleFD").text(info[14].num0);
+		$("#infoboxtext1FD").text(info[14].num1);
+		$("#infoboxtext2FD").text(info[14].num2);
+		TweenLite.to(".FDbox", 0.75, {opacity: 1});	
+		console.log("FDbox function fired");
+		}
+	});
+});
+
+//	Zone AO
+$(document).ready(function(){
+	$("#FDblock6").click(function(){
+		TweenLite.to(".FDbox", 0.5, {opacity: 0, onComplete: FDbox});
+		function FDbox() {
+		$("#infoboxtitleFD").text(info[15].num0);
+		$("#infoboxtext1FD").text(info[15].num1);
+		$("#infoboxtext2FD").text(info[15].num2);
+		TweenLite.to(".FDbox", 0.75, {opacity: 1});	
+		console.log("FDbox function fired");
+		}
+	});
+});
+
+//	Zone VE
+$(document).ready(function(){
+	$("#FDblock7").click(function(){
+		TweenLite.to(".FDbox", 0.5, {opacity: 0, onComplete: FDbox});
+		function FDbox() {
+		$("#infoboxtitleFD").text(info[16].num0);
+		$("#infoboxtext1FD").text(info[16].num1);
+		$("#infoboxtext2FD").text(info[16].num2);
+		TweenLite.to(".FDbox", 0.75, {opacity: 1});	
+		console.log("FDbox function fired");
+		}
+	});
+});
+
+//	Zone D
+$(document).ready(function(){
+	$("#FDblock8").click(function(){
+		TweenLite.to(".FDbox", 0.5, {opacity: 0, onComplete: FDbox});
+		function FDbox() {
+		$("#infoboxtitleFD").text(info[17].num0);
+		$("#infoboxtext1FD").text(info[17].num1);
+		$("#infoboxtext2FD").text(info[17].num2);
+		TweenLite.to(".FDbox", 0.75, {opacity: 1});	
+		console.log("FDbox function fired");
+		}
+	});
+});
 
 //	FD FAQs
 
@@ -749,7 +1043,7 @@ $(document).ready(function(){
 	});
 });
 
-
+/*
 
 $(document).ready(function(){
 	$("#FDQ1").click(function(){
@@ -782,8 +1076,7 @@ $(document).ready(function(){
 
 });
 
-
-
+*/
 
 
 
@@ -879,6 +1172,14 @@ $(document).ready(function(){
 	});
 });
 
+$(document).ready(function(){
+	$("#landinglinkPP").click(function(){
+		var tl = new TimelineMax()
+		tl.to(".PP", 0.5, {opacity: 0, display: "none"})
+		  .to("#landingcontainerPP", 1, {opacity: 1, display: "inline-block"});
+  	});
+});
+
 
 //	FAQs link TL
 $(document).ready(function(){
@@ -906,6 +1207,7 @@ var countIndustry = 0;
 
 $(document).ready(function(){
 	$("#industry1").click(function(){
+		countIndustry = 1;
 		slideIn = slideIn + 1;
 		var y = 2;
 		z = slideIn % y;
@@ -923,6 +1225,11 @@ $(document).ready(function(){
 		 	  .fromTo("#slideB", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
 			  .fromTo("#slideB", 0.5, {scale: 0.75, opacity: 0.5}, {scale: 1, opacity: 1});
 			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
+			if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
 		} else {
 			$("#leftPicA").attr("src", info[1].num0);
 			$("#industryTitleA").text(info[1].num1);
@@ -936,8 +1243,12 @@ $(document).ready(function(){
 		 	  .fromTo("#slideA", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
 			  .fromTo("#slideA", 0.5, {scale: 0.75, opacity: 0.5}, {scale: 1, opacity: 1});
 			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
+			if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
 		}
-		countIndustry = 1;
 		console.log("countIndustry" + countIndustry)
   	});
 });
@@ -947,6 +1258,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	$("#industry2").click(function(){
+		countIndustry = 2;
 		slideIn = slideIn + 1;
 		var y = 2;
 		z = slideIn % y;
@@ -965,7 +1277,11 @@ $(document).ready(function(){
 		 	  .fromTo("#slideB", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
 			  .fromTo("#slideB", 0.5, {scale: 0.75, opacity: 0.5}, {scale: 1, opacity: 1});
 			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
-
+			if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
 		} else {
 			$("#leftPicA").attr("src", info[2].num0);
 			$("#industryTitleA").text(info[2].num1);
@@ -979,8 +1295,12 @@ $(document).ready(function(){
 		 	  .fromTo("#slideA", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
 			  .fromTo("#slideA", 0.5, {scale: 0.75, opacity: 0.5}, {scale: 1, opacity: 1});
 			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
+			if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
 		}
-		countIndustry = 2;
   	});
 });
 
@@ -990,6 +1310,7 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$("#industry3").click(function(){
 		slideIn = slideIn + 1;
+		countIndustry = 3;
 		var y = 2;
 		z = slideIn % y;
   		console.log(slideIn);
@@ -1006,7 +1327,11 @@ $(document).ready(function(){
 		 	  .fromTo("#slideB", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
 			  .fromTo("#slideB", 0.5, {scale: 0.75, opacity: 0.5}, {scale: 1, opacity: 1});
 			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
-
+			  if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
 		} else {
 			$("#leftPicA").attr("src", info[3].num0);
 			$("#industryTitleA").text(info[3].num1);
@@ -1020,8 +1345,12 @@ $(document).ready(function(){
 		 	  .fromTo("#slideA", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
 			  .fromTo("#slideA", 0.5, {scale: 0.75, opacity: 0.5}, {scale: 1, opacity: 1});
 			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
+			if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
 		}
-		countIndustry = 3;
   	});
 });
 
@@ -1031,6 +1360,7 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$("#industry4").click(function(){
 		slideIn = slideIn + 1;
+		countIndustry = 4;
 		var y = 2;
 		z = slideIn % y;
   		console.log(slideIn);
@@ -1047,7 +1377,11 @@ $(document).ready(function(){
 		 	  .fromTo("#slideB", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
 			  .fromTo("#slideB", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
 			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
-
+			if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
 		} else {
 			$("#leftPicA").attr("src", info[4].num0);
 			$("#industryTitleA").text(info[4].num1);
@@ -1061,8 +1395,12 @@ $(document).ready(function(){
 		 	  .fromTo("#slideA", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
 			  .fromTo("#slideA", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
 			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
+		    if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
 		}
-		countIndustry = 4;
   	});
 });
 
@@ -1072,6 +1410,7 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$("#industry5").click(function(){
 		slideIn = slideIn + 1;
+		countIndustry = 5;
 		var y = 2;
 		z = slideIn % y;
   		console.log(slideIn);
@@ -1088,7 +1427,11 @@ $(document).ready(function(){
 		 	  .fromTo("#slideB", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
 			  .fromTo("#slideB", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
 			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
-
+			if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
 		} else {
 			$("#leftPicA").attr("src", info[5].num0);
 			$("#industryTitleA").text(info[5].num1);
@@ -1102,8 +1445,12 @@ $(document).ready(function(){
 		 	  .fromTo("#slideA", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
 			  .fromTo("#slideA", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
 			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
+			if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
 		}
-		countIndustry = 5;
   	});
 });
 
@@ -1113,6 +1460,7 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$("#industry6").click(function(){
 		slideIn = slideIn + 1;
+		countIndustry = 6;
 		var y = 2;
 		z = slideIn % y;
   		console.log(slideIn);
@@ -1129,7 +1477,11 @@ $(document).ready(function(){
 		 	  .fromTo("#slideB", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
 			  .fromTo("#slideB", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
 			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
-
+			if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
 		} else {
 			$("#leftPicA").attr("src", info[6].num0);
 			$("#industryTitleA").text(info[6].num1);
@@ -1143,8 +1495,12 @@ $(document).ready(function(){
 		 	  .fromTo("#slideA", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
 			  .fromTo("#slideA", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
 			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
+			if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
 		}
-		countIndustry = 6;
   	});
 });
 
@@ -1154,6 +1510,7 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$("#industry7").click(function(){
 		slideIn = slideIn + 1;
+		countIndustry = 7;
 		var y = 2;
 		z = slideIn % y;
   		console.log(slideIn);
@@ -1170,7 +1527,11 @@ $(document).ready(function(){
 		 	  .fromTo("#slideB", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
 			  .fromTo("#slideB", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
 			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
-
+			if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
 		} else {
 			$("#leftPicA").attr("src", info[7].num0);
 			$("#industryTitleA").text(info[7].num1);
@@ -1184,8 +1545,12 @@ $(document).ready(function(){
 		 	  .fromTo("#slideA", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
 			  .fromTo("#slideA", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
 			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
+			if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
 		}
-		countIndustry = 7;
   	});
 });
 
@@ -1195,6 +1560,7 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$("#industry8").click(function(){
 		slideIn = slideIn + 1;
+		countIndustry = 8;
 		var y = 2;
 		z = slideIn % y;
   		console.log(slideIn);
@@ -1211,7 +1577,11 @@ $(document).ready(function(){
 		 	  .fromTo("#slideB", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
 			  .fromTo("#slideB", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
 			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
-
+			if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
 		} else {
 			$("#leftPicA").attr("src", info[8].num0);
 			$("#industryTitleA").text(info[8].num1);
@@ -1225,8 +1595,59 @@ $(document).ready(function(){
 		 	  .fromTo("#slideA", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
 			  .fromTo("#slideA", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
 			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
+			if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}	
 		}
-		countIndustry = 8;
+  	});
+});
+
+$(document).ready(function(){
+	$("#industry9").click(function(){
+		slideIn = slideIn + 1;
+		countIndustry = 9;
+		var y = 2;
+		z = slideIn % y;
+  		console.log(slideIn);
+		if (z === 1) {								
+	  		$("#leftPicB").attr("src", info[9].num0);
+			$("#industryTitleB").text(info[9].num1);
+			$("#industryTextB1").text(info[9].num2);
+			$("#industryTextB2").text(info[9].num3);
+			$("#industryTextB3").text(info[9].num4);
+			TweenLite.defaultEase = Power3.easeInOut;
+			var tl = new TimelineMax()
+			tl.fromTo("#slideA", 0.5, {scale: 1, opacity: 1}, {scale: 0.5, opacity: 0.5})
+			  .fromTo("#slideA", 0.75, {xPercent: 0}, {xPercent: 100})
+		 	  .fromTo("#slideB", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
+			  .fromTo("#slideB", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
+			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
+			if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
+		} else {
+			$("#leftPicA").attr("src", info[9].num0);
+			$("#industryTitleA").text(info[9].num1);
+			$("#industryTextA1").text(info[9].num2);
+			$("#industryTextA2").text(info[9].num3);
+			$("#industryTextA3").text(info[9].num4);
+			TweenLite.defaultEase = Power3.easeInOut;
+			var tl = new TimelineMax()
+			tl.fromTo("#slideB", 0.5, {scale: 1, opacity: 1}, {scale: 0.5, opacity: 0.5})
+			  .fromTo("#slideB", 0.75, {xPercent: 0}, {xPercent: 100})
+		 	  .fromTo("#slideA", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
+			  .fromTo("#slideA", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
+			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
+			if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
+		}
   	});
 });
 
@@ -1238,7 +1659,7 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$("#nextIndustry").click(function(){
 		countIndustry++;
-		if (countIndustry === 9) {
+		if (countIndustry === 10) {
 			countIndustry = 1;
 		}
 		i = countIndustry;
@@ -1260,7 +1681,11 @@ $(document).ready(function(){
 		 	  .fromTo("#slideB", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
 			  .fromTo("#slideB", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
 			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
-
+			if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
 		} else {
 			$("#leftPicA").attr("src", info[i].num0);
 			$("#industryTitleA").text(info[i].num1);
@@ -1274,6 +1699,11 @@ $(document).ready(function(){
 		 	  .fromTo("#slideA", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
 			  .fromTo("#slideA", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
 			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
+			if (countIndustry === 2) {
+			TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
 		}
 
 		/* $("#leftPicB").attr("src", info[i].num0);
@@ -1296,7 +1726,7 @@ $(document).ready(function(){
 	$("#prevIndustry").click(function(){
 		countIndustry--;
 		if (countIndustry < 1) {
-			countIndustry = 8;
+			countIndustry = 9;
 		}
 		var i = countIndustry;
 		console.log(countIndustry);
@@ -1319,7 +1749,11 @@ $(document).ready(function(){
 		 	  .fromTo("#slideB", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
 			  .fromTo("#slideB", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
 			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
-
+			if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
 		} else {
 			$("#leftPicA").attr("src", info[i].num0);
 			$("#industryTitleA").text(info[i].num1);
@@ -1333,6 +1767,11 @@ $(document).ready(function(){
 		 	  .fromTo("#slideA", 0.75, {xPercent: -100}, {xPercent: 0}, "-=0.75")
 			  .fromTo("#slideA", 0.5, {scale: 0.5, opacity: 0.5}, {scale: 1, opacity: 1});
 			  console.log("slideB is now on page. slideIn: " + slideIn + " z: " + z);
+			if (countIndustry === 2) {
+				TweenLite.to(".learn-more", 1.5, {opacity: 1, delay: 1.5});
+			} else {
+				TweenLite.to(".learn-more", 1.5, {opacity: 0});
+			}
 		}
   	});
 });
@@ -1406,35 +1845,7 @@ $(document).ready(function(){
 
 
 // map
-var map;
-    $(document).ready(function(){
-      map = new GMaps({
-        el: '#map',
-        lat: 40.5651428,
-        zoom: 14,
-        zoomControl: false,
-        lng: -74.59591769999997,
-        scrollwheel: false,
-		scaleControl: false
-      });
-      map.addMarker({
-        lat: 40.5651428,
-        lng: -74.59591769999997,
-        title: 'Western Technologies Group LLC',
-        infoWindow: {
-          content: '<p>Western Technologies Group LLC</p>'
-        },
-        details: {
-          database_id: 42,
-          author: 'HPNeo'
-        },
-        mouseover: function(e){
-          if(console.log)
-            console.log(e);
-        }
-      });
-     
-    });
+
 
 
 // Bookflap 		FLOOD CENTER LOGO ROLL OVER
